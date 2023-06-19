@@ -1,0 +1,139 @@
+body {
+    /*border: 1px solid red;*/
+    padding: auto;
+    margin: auto; 
+}
+
+.container {
+    /*border: 1px solid green;*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.container-header {
+    /*border: 1px solid green;*/
+    display: flex;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+}
+.container-footer {
+       /*border: 1px solid green;*/
+       display: flex;
+       justify-content: center;
+       font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+    border-radius: 5px;
+    background: #f2f7f5;
+    width: 60%;
+}
+
+.logo-web {
+    display: flex;
+    border-bottom: 1px solid;
+    font-size: 50px;
+    padding-bottom: 10px;
+ 
+}
+
+form {
+    display: flex;
+    margin: auto;
+    padding: auto;
+}
+
+form input{
+    height: 25px;
+    width: 300px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    
+}
+
+form button{
+    border: none;
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+header ul {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    list-style: none;
+    display: flex;
+}
+
+header li a {
+    padding-right: 20px;
+    text-decoration: none;
+    color: #333;
+    
+}
+
+main {
+    
+    width: 60%;
+    
+}
+
+.slm {
+    text-align: center;
+    margin-bottom: 50px;
+    border-bottom: 1px solid;
+    
+}
+
+section p {
+    padding-left: 80px;
+}
+
+table{
+    width: 70%;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    border-radius: 5px;
+    position: relative;
+    left: 15%;
+    margin-bottom: 30px;
+    text-align: center;
+
+}
+
+table td{
+    width: auto;
+}
+
+footer {
+    background-color: #f2f7f5;
+    width: 60%;
+    border-top: 1px solid;
+    border-radius: 5px;
+    justify-content: center;
+    display: flex;
+}
+
+.sosial-media-icons {
+    list-style: none;
+}
+
+.sosial-media-icons a {
+    text-decoration: none;
+    color: black;
+    
+}
+
+footer ul {
+    padding: 0;
+    display: flex;
+}
+
+footer li {
+    padding-right: 10px;
+}

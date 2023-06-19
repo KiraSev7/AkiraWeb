@@ -1,0 +1,132 @@
+/* CSS Responsif untuk Mobile */
+@media only screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    padding-bottom: 5px;
+  }
+
+  .logo-web {
+    padding: 10px;
+    font-size: 25px;
+  }
+
+  header ul {
+    display: inline;
+    text-align: center;
+  }
+header li a {
+  padding: 0;
+}
+
+  form input {
+    border: 1px solid;
+    width: 80%;
+    height: 25px;
+    margin-right: 5px;
+    background-color: aqua;
+  }
+
+  .slm {
+    margin: 0;
+  }
+
+  form button {
+    background-color: aqua;
+    margin: 0;
+    border: 1px solid;
+  }
+
+  main {
+    width: auto;
+      padding: 10px;
+  }
+
+  section p {
+      text-align: center;
+      padding: 0;
+  }
+
+  table {
+      left: 0;
+      width: 90%;
+      margin: 0 auto;
+  }
+
+  footer .col-md-6 {
+    margin-bottom: 10px;
+  }
+
+  footer {
+    padding-top: 15px;
+    text-align: center;
+    display: inline;
+    width: auto;
+  }
+  .container-footer {
+    border-top: 1px solid ;
+    background-color: #f2f7f5;
+    width: auto;
+    display: block;
+  }
+
+  footer ul {
+   justify-content: center;
+  }
+
+  footer li {
+    border: 1px solid;
+    border-radius: 5px;
+    margin-right: 5px;
+    background-color: aqua;
+    padding: 10px;
+  }
+
+}
+
+/* CSS Responsif untuk Tablet */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+      justify-content: space-between;
+      padding: 0 20px;
+  }
+
+  .logo-web {
+      font-size: 40px;
+      padding: 20px 0;
+  }
+
+  form {
+      width: 40%;
+      justify-content: flex-end;
+  }
+
+  form input {
+      width: 200px;
+      margin-right: 10px;
+  }
+
+  main {
+      width: 60%;
+      padding: 20px;
+  }
+
+  table {
+      width: 90%;
+      left: 5%;
+      margin: 0 auto;
+  }
+
+  footer {
+      width: 60%;
+      padding: 20px;
+  }
+
+  footer .col-md-6 {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  footer ul {
+      justify-content: center;
+  }
+}
