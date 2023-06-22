@@ -1,0 +1,33 @@
+body {
+    margin: auto;
+    padding: auto;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    display: inline;
+    
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f7f5;
+    width: 40%;
+    position: relative;
+    left: 30%;
+   
+}
+
+li {
+    background-color: aqua;
+    border: 1px solid;
+    list-style: none;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+h3 {
+    display: inline-block;
+
+}

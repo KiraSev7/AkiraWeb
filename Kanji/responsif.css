@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .container{
+       border-radius: 5px;
+       width: auto;
+       position: relative;
+       left: auto;
+    }
+
+    li {
+        text-align: center;
+    }
+        
+   }
