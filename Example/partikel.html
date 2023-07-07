@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Partikel Bahasa Jepang</title>
+    <script src="https://kit.fontawesome.com/ab4579c87e.js" crossorigin="anonymous"></script>
+    <style>
+        .konten {
+            display: none;
+            transition: display 0.5s ease;
+        }
+
+        .konten.visible {
+            display: block;
+        }
+    </style>
+    <script>
+        function toggleKonten(id) {
+            var konten = document.getElementById(id);
+            konten.classList.toggle("visible");
+        }
+    </script>
+</head>
+<body>
+    <h1>Partikel は</h1>
+    <ul>
+        <li onclick="toggleKonten('konten1')">Menujukkan subject / Pokok kalimat</li>
+    </ul>
+    <div id="konten1" class="konten">
+        <p>私は遅刻 (ちこく) するかもしれません。<i onclick="toggleKonten('penjelasan')" class="fas fa-star bintang"></i></p>
+        <p id="penjelasan" class="konten">Partikel "wa" (は) digunakan untuk menyoroti "watashi" (saya) sebagai topik atau subjek yang sedang dibahas dalam konteks tertentu. Ini menekankan pada "saya" sebagai subjek umum atau topik pembicaraan</p>
+    </div>
+    <h1>Partikel が</h1>
+    <ul>
+        <li onclick="toggleKonten('konten2')">Menujukkan subject / Memberikan penekan pada subjectnya.</li>
+    </ul>
+    <div id="konten2" class="konten">
+        <p>私が遅刻 (ちこく) するかもしれません。<i onclick="toggleKonten('penjelasan2')" class="fas fa-star bintang"></i></p>
+        <p id="penjelasan2" class="konten">Partikel "ga" (が) digunakan sebelum kata "watashi" (私), yang juga berarti "saya". Partikel "ga" (が) dapat menunjukkan subjek yang spesifik atau memberikan penekanan pada subjek</p>
+    </div>
+</body>
+</html>

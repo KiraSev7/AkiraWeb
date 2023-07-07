@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tebak Kanji</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        #game-container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #f5f5f5;
+        }
+
+        #question {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input[type="text"] {
+            width: 200px;
+            padding: 8px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #333;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #result {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tebak Kanji</h1>
+    <div id="game-container">
+        <div id="question"></div>
+        <input type="text" id="answer">
+        <button onclick="checkAnswer()">Submit</button>
+        <div id="result"></div>
+    </div>
+
+    <script>
+        var kanjiList = [
+    { kanji: "家", meaning: "Rumah" },
+    { kanji: "大", meaning: "Besar" },
+    { kanji: "小", meaning: "Kecil" },
+    { kanji: "長", meaning: "Panjang" },
+    { kanji: "短", meaning: "Pendek" },
+    { kanji: "広", meaning: "Luas" },
+    { kanji: "狭", meaning: "Sempit" },
+    { kanji: "入", meaning: "Masuk" },
+    { kanji: "出", meaning: "Keluar" },
+    { kanji: "外", meaning: "Luar" },
+    { kanji: "中", meaning: "Dalam" },
+    { kanji: "右", meaning: "Kanan" },
+    { kanji: "後", meaning: "Belakang" },
+    { kanji: "左", meaning: "Kiri" },
+    { kanji: "前", meaning: "Depan" },
+    { kanji: "上", meaning: "Atas" },
+    { kanji: "下", meaning: "Bawah" },
+    { kanji: "床", meaning: "Lantai" },
+    { kanji: "壁", meaning: "Dinding" },
+    { kanji: "屋", meaning: "Atap/Rumah" }
+];
+
+var currentQuestionIndex = 0;
+var totalQuestions = kanjiList.length;
+var score = 0;
+
+var questionDiv = document.getElementById("question");
+var answerInput = document.getElementById("answer");
+var resultDiv = document.getElementById("result");
+var scoreDiv = document.getElementById("score");
+
+function displayQuestion() {
+    var currentQuestion = kanjiList[currentQuestionIndex];
+    questionDiv.textContent = currentQuestion.kanji;
+    answerInput.value = "";
+    resultDiv.textContent = "";
+}
+
+function checkAnswer() {
+    var currentQuestion = kanjiList[currentQuestionIndex];
+    var userAnswer = answerInput.value.trim().toLowerCase();
+    var correctAnswer = currentQuestion.meaning.toLowerCase();
+
+    if (userAnswer === correctAnswer) {
+        resultDiv.textContent = "Jawaban Anda benar!";
+        score++;
+    } else {
+        resultDiv.textContent = "Jawaban Anda salah. Jawaban yang benar: " + currentQuestion.meaning;
+    }
+
+    currentQuestionIndex++;
+
+    if (currentQuestionIndex < totalQuestions) {
+        displayQuestion();
+    } else {
+        questionDiv.textContent = "Permainan selesai!";
+        answerInput.style.display = "none";
+        resultDiv.textContent = "Skor Anda: " + score + "/" + totalQuestions;
+    }
+    
+    scoreDiv.textContent = "Skor: " + score; // Update skor di setiap pertanyaan
+}
+
+displayQuestion();
+    </script>
+</body>
+</html>
