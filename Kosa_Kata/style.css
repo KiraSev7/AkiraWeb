@@ -16,7 +16,7 @@ body {
 
   button {
     margin-bottom: 10px;
-    background-color: #0f7173;
+    background-color: aqua;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -27,7 +27,7 @@ body {
   }
 
   button:hover {
-    background-color: #155e61;
+    background-color: #07eff7;
   }
 
   .hidden {
@@ -81,5 +81,5 @@ body {
   }
       
   li:hover {
-    background-color: #e2ebe9;
+    background-color: aqua;
   }
