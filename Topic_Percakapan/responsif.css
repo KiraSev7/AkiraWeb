@@ -1,9 +1,19 @@
 @media only screen and (max-width: 600px) {
- .container{
-    text-align: center;
-    width: auto;
-    position: relative;
-    left: auto;
- }
-    
-}
+   body{
+      margin: 0%;
+      padding: 0%;
+   } 
+   
+   .main{
+      width: auto;
+      left: 0%;
+
+   }
+   
+   .container{
+      width: auto;
+      left: 0%;
+   }
+
+
+   }

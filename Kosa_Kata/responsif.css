@@ -1,13 +1,19 @@
 @media only screen and (max-width: 600px) {
-    .kategori {
-      border-radius: 5px;
-      width: auto;
-      position: relative;
-      left: auto;
-    }
+  body{
+     margin: 0%;
+     padding: 0%;
+  } 
+  
+  .main{
+     width: auto;
+     left: 0%;
 
-    li {
-      text-align: center;
-    }
-    
+  }
+  
+  .container{
+     width: auto;
+     left: 0%;
+  }
+
+
   }

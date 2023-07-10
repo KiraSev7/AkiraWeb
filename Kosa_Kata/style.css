@@ -1,33 +1,51 @@
 body {
-    background-color: #f2f7f5;
+    margin: 0%;
+    padding: 0%;
     color: #333;
-    margin: auto;
-    padding: auto;
     font-family: 'Courier New', Courier, monospace;
   }
+  .container {
+    background-color: #f2f7f5;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    height: auto;
+  }
+
+  .main {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 20%;
+    width: 60%;
+ 
+}
   
   h1 {
     text-align: center;
     font-size: 24px;
-    margin-bottom: 20px;
+
     text-transform: uppercase;
     letter-spacing: 2px;
   }
 
   button {
+    border: 1px solid;
     margin-bottom: 10px;
     background-color: aqua;
-    color: #fff;
+    color: black;
     padding: 10px 20px;
-    border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-  }
-
-  button:hover {
-    background-color: #07eff7;
   }
 
   .hidden {
@@ -35,17 +53,20 @@ body {
   }
 
   .kategori {
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
     padding: 10px;
     margin-bottom: 20px;
     position: relative;
     border-radius: 5px;
-    background-color: #f2f7f5;
-    width: 40%;
+    background-color: white;
+    width: auto;
     position: relative;
-    left: 30%;
+    left: 0%;
     animation-duration: 0.5s;
     animation-fill-mode: forwards;
-    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
 
@@ -66,20 +87,16 @@ body {
   }
 
   li {
-    border: 1px solid;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     list-style: none;
     margin-bottom: 5px;
     border-radius: 5px;
     text-align: center;
-    background-color: #f2f7f5;
-    border: none;
+    background-color: white;
     border-radius: 5px;
     padding: 8px 12px;
     margin-bottom: 10px;
     font-size: 14px;
     transition: background-color 0.3s ease;
-  }
-      
-  li:hover {
-    background-color: aqua;
   }

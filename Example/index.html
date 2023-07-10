@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kosa Kata</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      background-color: #f2f2f2;
+    }
+
+    h1 {
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    input[type="text"] {
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: none;
+      margin-right: 10px;
+    }
+
+    button[type="submit"] {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #333;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    label {
+      display: flex;
+      align-items: center;
+      margin-left: 5px;
+      cursor: pointer;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 5px;
+    }
+
+    button#hapusTerkini {
+      padding: 8px 16px;
+      font-size: 16px;
+      background-color: #c0392b;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    button#hapusTerkini:hover {
+      background-color: #a63225;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #999;
+    }
+
+    :-moz-placeholder {
+      color: #999;
+    }
+
+    ::-moz-placeholder {
+      color: #999;
+    }
+
+    :-ms-input-placeholder {
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <h1>Kosa Kata</h1>
+  
+  <form id="formKosakata" method="get">
+    <input type="text" id="kata" name="kata" placeholder="Kata" required>
+    <input type="text" id="arti" name="arti" placeholder="Arti" required>
+    <button type="submit">Tambah</button>
+  </form>
+  
+  <h2>Daftar Kosa Kata:</h2>
+  <ul id="daftarKosakata">
+    <!-- Daftar kosa kata akan ditampilkan di sini -->
+  </ul>
+  
+  <button id="hapusTerkini">Hapus Terkini</button>
+  
+  <script>
+    var formKosakata = document.getElementById('formKosakata');
+    var daftarKosakata = document.getElementById('daftarKosakata');
+    var hapusTerkiniButton = document.getElementById('hapusTerkini');
+
+    if (localStorage.getItem('kosakata')) {
+      daftarKosakata.innerHTML = localStorage.getItem('kosakata');
+    }
+
+    formKosakata.addEventListener('submit', function(event) {
+      event.preventDefault();
+      
+      var kataInput = document.getElementById('kata');
+      var artiInput = document.getElementById('arti');
+      var kata = kataInput.value;
+      var arti = artiInput.value;
+
+      var listItem = document.createElement('li');
+      var checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.value = kata + ' - ' + arti;
+
+      var label = document.createElement('label');
+      label.appendChild(checkbox);
+      label.appendChild(document.createTextNode(kata + ' - ' + arti));
+
+      listItem.appendChild(label);
+      daftarKosakata.appendChild(listItem);
+
+      localStorage.setItem('kosakata', daftarKosakata.innerHTML);
+
+      kataInput.value = '';
+      artiInput.value = '';
+    });
+
+    hapusTerkiniButton.addEventListener('click', function() {
+      var checkboxes = daftarKosakata.querySelectorAll('input[type="checkbox"]:checked');
+
+      if (checkboxes.length > 0) {
+        var password = prompt('Masukkan password untuk menghapus:');
+
+        if (password === 'qwerty123') {
+          checkboxes.forEach(function(checkbox) {
+            checkbox.parentNode.parentNode.remove();
+          });
+
+          localStorage.setItem('kosakata', daftarKosakata.innerHTML);
+
+          alert('Kosa kata terpilih berhasil dihapus.');
+        } else {
+          alert('Password salah. Penghapusan dibatalkan.');
+        }
+      } else {
+        alert('Tidak ada kosa kata terpilih untuk dihapus.');
+      }
+    });
+  </script>
+</body>
+</html>

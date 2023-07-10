@@ -1,28 +1,61 @@
-body {
-    padding: auto;
-    margin: auto; 
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+span {
+  background-color: aqua;
+    display: inline-block;
+    cursor: pointer;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    width: 97.5%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 5px;
+    /*
+    background-color: #80E7D1;
+    style="background-color: #98F0AC;"
+    style="background-color: #CAF389;"
+    style="background-color: #F4F581;"
+    */
+
 }
 
 .container {
-    font-family: 'Courier New', Courier, monospace;
-    width: 70%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 20px;
-    position: relative;
-    left: 15%;
-    border-radius: 5px;
-    background-color: #f2f7f5;
-}
-
-ol{
-    display: inline;
-}
-
-ol li {
-    background-color: aqua;
-    list-style: none;
     border-top: 1px solid;
     border-bottom: 1px solid;
-    margin-bottom: 20px;
     border-radius: 5px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    background-color: #f2f7f5;
+    height: auto;
+}
+
+.main {
+    background-color: white;
+    border-radius: 5px;
+    position: relative;
+    left: 20%;
+    width: 60%;
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    margin-bottom: 5px;
+    margin-top: 5px;
+ 
+}
+
+.content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.active {
+  max-height: 950px; /* Sesuaikan tinggi maksimum sesuai kebutuhan */
 }
