@@ -6,119 +6,194 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="responsif.css">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <style>
+    .hidden {
+      display: none;
+    }
+  </style>
 </head>
 <body>
   <div class="container">
     <div class="main">
-  <h1>Kategori Bahasa</h1>
-  
-  <button onclick="showNextCategory()">Next</button>
-  
-  <div id="kategoriBahasa">
-    <div class="kategori" id="kategori1">
-        <h2>Di dalam rumah :</h2>
-        <ul>
-          <li>家 (ie) - Rumah</li>
-          <li>大 (おお) - Besar</li>
-          <li>小 (しょう) - Kecil</li>
-          <li>長 (ちょう) - Panjang</li>
-          <li>短 (たん) - Pendek</li>
-          <li>広 (ひろ) - Luas</li>
-          <li>狭 (せま) - Sempit</li>
-          <li>入 (にゅう) - Masuk</li>
-          <li>出 (しゅつ) - Keluar</li>
-          <li>外 (がい) - Luar</li>
-          <li>中 (ちゅう) - Dalam</li>
-          <li>右 (みぎ) - Kanan</li>
-          <li>後 (ご) - Belakang</li>
-          <li>左 (ひだり) - Kiri</li>
-          <li>前 (まえ) - Depan</li>
-          <li>上 (うえ) - Atas</li>
-          <li>下 (した) - Bawah</li>
-          <li>床 (ゆか) - Lantai</li>
-          <li>壁 (かべ) - Dinding</li>
-          <li>屋 (や) - Atap/Rumah</li>
-        </ul>
-    </div>
-    <div class="kategori hidden" id="kategori2">
-        <h2>Angka (数字) :</h2>
-        <ul>
-          <li>一 (いち) - Satu</li>
-          <li>二 (に) - Dua</li>
-          <li>三 (さん) - Tiga</li>
-          <li>四 (し) - Empat</li>
-          <li>伍 (ご) - Lima</li>
-          <li>六 (ろく) - Enam</li>
-          <li>七 (しち/なな) - Tujuh</li>
-          <li>八 (はち) - Delapan</li>
-          <li>九 (きゅう/く) - Sembilan</li>
-          <li>十 (じゅう) - Sepuluh</li>
-          <li>百 (ひゃく) - Seratus</li>
-          <li>千 (せん) - Seribu</li>
-          <li>万 (まん) - Sepuluh ribu</li>
-          <li>円 (えん) - Yen</li>
-        </ul>
-    </div>
-    <div class="kategori hidden" id="kategori3">
-        <h2>Element (元素) :</h2>
-        <ul>
-          <li>火 (か) - Api</li>
-          <li>水 (みず) - Air</li>
-          <li>土 (つち) - Tanah</li>
-          <li>風 (かぜ) - Angin</li>
-          <li>木 (き) - Pohon</li>
-          <li>金 (きん) - Emas</li>
-          <li>鉄 (てつ) - Besi</li>
-        </ul>
-    </div>
-    <div class="kategori hidden" id="kategori4">
-        <h2>Kata Kerja (動詞) :</h2>
-        <ul>
-          <li>食 (た) - Makan</li>
-          <li>飲 (の) - Minum</li>
-          <li>見 (み) - Melihat</li>
-          <li>話 (はな) - Berbicara</li>
-          <li>持 (も) - Memegang</li>
-          <li>学 (がく) - Belajar</li>
-          <li>読 (よ) - Membaca</li>
-          <li>聞 (き) - Mendengar, bertanya</li>
-        </ul>
-          <div style="text-align: center;">
-          <a href="#" class="latihan">AYO MULAI BERLATIH!</a>
+      <h1>Kanji N5</h1>
+
+      <button onclick="showPreviousCategory()">Previous</button>
+      <button onclick="showNextCategory()" id="next">Next</button>
+
+      <div id="kategoriBahasa">
+        <div class="kategori" id="kategori1">
+            <h2>KANJI 1</h2>
+            <ul>
+              <li class="kanji-item">一</li>
+              <li class="kanji-item">二</li>
+              <li class="kanji-item">三</li>
+              <li class="kanji-item">四</li>
+              <li class="kanji-item">五</li>
+            </ul>
+        </div>
+        <div class="kategori hidden" id="kategori2">
+            <h2>KANJI 2</h2>
+            <ul>
+              <li class="kanji-item">六</li>
+              <li class="kanji-item">七</li>
+              <li class="kanji-item">八</li>
+              <li class="kanji-item">九</li>
+              <li class="kanji-item">十</li>
+            </ul>
+        </div>
+        <div class="kategori hidden" id="kategori3">
+            <h2>KANJI 3</h2>
+            <ul>
+              <li class="kanji-item">百</li>
+              <li class="kanji-item">千</li>
+              <li class="kanji-item">万</li>
+              <li class="kanji-item">円</li>
+            </ul>
+        </div>
+        <div class="kategori hidden" id="kategori4">
+            <h2>KANJI 4</h2>
+            <ul>
+              <li class="kanji-item">日</li>
+              <li class="kanji-item">本</li>
+              <li class="kanji-item">人</li>
+              <li class="kanji-item">時</li>
+            </ul>
           </div>
+          <div class="kategori hidden" id="kategori5">
+              <h2>KANJI 5</h2>
+              <ul>
+                <li class="kanji-item">食</li>
+                <li class="kanji-item">見</li>
+                <li class="kanji-item">聞</li>
+                <li class="kanji-item">行</li>
+                <li class="kanji-item">来</li>
+              </ul>
+            </div>
+            <div class="kategori hidden" id="kategori6">
+                <h2>KANJI 6</h2>
+                <ul>
+                  <li class="kanji-item">私</li>
+                  <li class="kanji-item">友</li>
+                  <li class="kanji-item">学</li>
+                  <li class="kanji-item">生</li>
+                  <li class="kanji-item">校</li>
+                </ul>
+              </div>
+              <div class="kategori hidden" id="kategori7">
+                  <h2>KANJI 7</h2>
+                  <ul>
+                    <li class="kanji-item">男</li>
+                    <li class="kanji-item">女</li>
+                    <li class="kanji-item">子</li>
+                    <li class="kanji-item">父</li>
+                    <li class="kanji-item">母</li>
+                  </ul>
+                </div>
+                <div class="kategori hidden" id="kategori8">
+                    <h2>KANJI 8</h2>
+                    <ul>
+                      <li class="kanji-item">何</li>
+                      <li class="kanji-item">兄</li>
+                      <li class="kanji-item">弟</li>
+                      <li class="kanji-item">姉</li>
+                      <li class="kanji-item">妹</li>
+                    </ul>
+                  </div>
+                  <div class="kategori hidden" id="kategori9">
+                      <h2>KANJI 9</h2>
+                      <ul>
+                        <li class="kanji-item">大</li>
+                        <li class="kanji-item">中</li>
+                        <li class="kanji-item">小</li>
+                        <li class="kanji-item">新</li>
+                        <li class="kanji-item">古</li>
+                      </ul>
+                    </div>
+                    <div class="kategori hidden" id="kategori10">
+                        <h2>KANJI 10</h2>
+                        <ul>
+                          <li class="kanji-item">月</li>
+                          <li class="kanji-item">日</li>
+                          <li class="kanji-item">水</li>
+                          <li class="kanji-item">木</li>
+                          <li class="kanji-item">金</li>
+                          <li class="kanji-item">土</li>
+                        </ul>
+                      </div>
+                      <div class="kategori hidden" id="kategori11">
+                          <h2>KANJI 11</h2>
+                          <ul>
+                            <li class="kanji-item">今</li>
+                            <li class="kanji-item">先</li>
+                            <li class="kanji-item">毎</li>
+                            <li class="kanji-item">週</li>
+                            <li class="kanji-item">年</li>
+                          </ul>
+                        </div>
+                        <div class="kategori hidden" id="kategori12">
+                            <h2>KANJI 12</h2>
+                            <ul>
+                              <li class="kanji-item">上</li>
+                              <li class="kanji-item">下</li>
+                              <li class="kanji-item">右</li>
+                              <li class="kanji-item">左</li>
+                              <li class="kanji-item">前</li>
+                            </ul>
+                          </div>
+                          <div class="kategori hidden" id="kategori13">
+                              <h2>KANJI 13</h2>
+                              <ul>
+                                <li class="kanji-item">後</li>
+                                <li class="kanji-item">東</li>
+                                <li class="kanji-item">西</li>
+                                <li class="kanji-item">北</li>
+                                <li class="kanji-item">南</li>
+                              </ul>
+                            </div>
+                            <div class="kategori hidden" id="kategori14">
+                                <h2>KANJI 14</h2>
+                                <ul>
+                                  <li class="kanji-item">山</li>
+                                  <li class="kanji-item">川</li>
+                                  <li class="kanji-item">花</li>
+                                  <li class="kanji-item">言</li>
+                                  <li class="kanji-item">話</li>
+                                  <li class="kanji-item">読</li>
+                                </ul>
+                              </div>
+            <div class="game">
+                <a href="#" class="latihan">AYO MULAI BERLATIH!</a>
+            </div>
+      </div>
     </div>
   </div>
-  </div>
-  </div>
-
   <script>
-    var kategoriList = document.getElementsByClassName('kategori');
-    var currentCategoryIndex = 0;
+    let currentCategory = 1;
+    const totalCategories = 14;
 
-    // Sembunyikan semua kategori kecuali kategori pertama
-    for (var i = 1; i < kategoriList.length; i++) {
-      kategoriList[i].classList.add('hidden');
+    function showCategory(categoryNumber) {
+      for (let i = 1; i <= totalCategories; i++) {
+        const category = document.getElementById('kategori' + i);
+        if (i === categoryNumber) {
+          category.classList.remove('hidden');
+        } else {
+          category.classList.add('hidden');
+        }
+      }
+      currentCategory = categoryNumber;
     }
 
     function showNextCategory() {
-      // Sembunyikan kategori saat ini dengan efek slide-out
-      kategoriList[currentCategoryIndex].style.animationName = 'slideOut';
-      
-      // Tambahkan 1 ke indeks kategori saat ini (jika melebihi panjang array, kembali ke awal)
-      currentCategoryIndex = (currentCategoryIndex + 1) % kategoriList.length;
-      
-      // Tampilkan kategori berikutnya dengan efek slide-in
-      kategoriList[currentCategoryIndex].classList.remove('hidden');
-      kategoriList[currentCategoryIndex].style.animationName = 'slideIn';
-      
-      // Sembunyikan kategori sebelumnya setelah efek slide-out selesai
-      setTimeout(function() {
-        kategoriList[(currentCategoryIndex - 1 + kategoriList.length) % kategoriList.length].classList.add('hidden');
-      }, 500); // Sesuaikan dengan durasi animasi
+      currentCategory = (currentCategory % totalCategories) + 1;
+      showCategory(currentCategory);
     }
 
-    // Tampilkan kategori pertama saat halaman dimuat
-    kategoriList[0].classList.remove('hidden');
+    function showPreviousCategory() {
+      currentCategory = (currentCategory - 2 + totalCategories) % totalCategories + 1;
+      showCategory(currentCategory);
+    }
+
+    showCategory(currentCategory);
   </script>
 </body>
 </html>

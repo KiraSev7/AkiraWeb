@@ -1,175 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Kosa Kata</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f2f2f2;
-    }
+  <title>Penyimpanan Kosa Kata - InfinityFree</title>
+  <script>
+    function saveGlossary() {
+      var glossaryInput = document.getElementById("glossary-input");
+      var glossaryTerm = glossaryInput.value.trim();
 
-    h1 {
-      color: #333;
-      text-align: center;
-    }
+      if (glossaryTerm !== "") {
+        // Membuat objek XMLHttpRequest
+        var xhr = new XMLHttpRequest();
+        xhr.open("POST", "save_glossary.php", true);
+        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+        xhr.onreadystatechange = function() {
+          if (xhr.readyState === 4 && xhr.status === 200) {
+            // Tindakan yang diambil setelah data disimpan
+            alert("Kosa kata berhasil disimpan!");
+          }
+        };
 
-    form {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 20px;
-    }
+        // Mengirim data kosa kata ke server
+        var data = "term=" + encodeURIComponent(glossaryTerm);
+        xhr.send(data);
 
-    input[type="text"] {
-      padding: 8px;
-      font-size: 16px;
-      border-radius: 4px;
-      border: none;
-      margin-right: 10px;
+        // Menghapus nilai input setelah dikirim
+        glossaryInput.value = "";
+      }
     }
-
-    button[type="submit"] {
-      padding: 8px 16px;
-      font-size: 16px;
-      background-color: #333;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    h2 {
-      color: #333;
-    }
-
-    ul {
-      list-style-type: none;
-      padding: 0;
-    }
-
-    li {
-      display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    label {
-      display: flex;
-      align-items: center;
-      margin-left: 5px;
-      cursor: pointer;
-    }
-
-    input[type="checkbox"] {
-      margin-right: 5px;
-    }
-
-    button#hapusTerkini {
-      padding: 8px 16px;
-      font-size: 16px;
-      background-color: #c0392b;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-
-    button#hapusTerkini:hover {
-      background-color: #a63225;
-    }
-
-    ::-webkit-input-placeholder {
-      color: #999;
-    }
-
-    :-moz-placeholder {
-      color: #999;
-    }
-
-    ::-moz-placeholder {
-      color: #999;
-    }
-
-    :-ms-input-placeholder {
-      color: #999;
-    }
-  </style>
+  </script>
 </head>
 <body>
-  <h1>Kosa Kata</h1>
+  <h2>Penyimpanan Kosa Kata - InfinityFree</h2>
   
-  <form id="formKosakata" method="get">
-    <input type="text" id="kata" name="kata" placeholder="Kata" required>
-    <input type="text" id="arti" name="arti" placeholder="Arti" required>
-    <button type="submit">Tambah</button>
-  </form>
-  
-  <h2>Daftar Kosa Kata:</h2>
-  <ul id="daftarKosakata">
-    <!-- Daftar kosa kata akan ditampilkan di sini -->
-  </ul>
-  
-  <button id="hapusTerkini">Hapus Terkini</button>
-  
-  <script>
-    var formKosakata = document.getElementById('formKosakata');
-    var daftarKosakata = document.getElementById('daftarKosakata');
-    var hapusTerkiniButton = document.getElementById('hapusTerkini');
+  <label for="glossary-input">Kosa Kata:</label>
+  <input type="text" id="glossary-input">
+  <button onclick="saveGlossary()">Simpan</button>
 
-    if (localStorage.getItem('kosakata')) {
-      daftarKosakata.innerHTML = localStorage.getItem('kosakata');
-    }
-
-    formKosakata.addEventListener('submit', function(event) {
-      event.preventDefault();
-      
-      var kataInput = document.getElementById('kata');
-      var artiInput = document.getElementById('arti');
-      var kata = kataInput.value;
-      var arti = artiInput.value;
-
-      var listItem = document.createElement('li');
-      var checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
-      checkbox.value = kata + ' - ' + arti;
-
-      var label = document.createElement('label');
-      label.appendChild(checkbox);
-      label.appendChild(document.createTextNode(kata + ' - ' + arti));
-
-      listItem.appendChild(label);
-      daftarKosakata.appendChild(listItem);
-
-      localStorage.setItem('kosakata', daftarKosakata.innerHTML);
-
-      kataInput.value = '';
-      artiInput.value = '';
-    });
-
-    hapusTerkiniButton.addEventListener('click', function() {
-      var checkboxes = daftarKosakata.querySelectorAll('input[type="checkbox"]:checked');
-
-      if (checkboxes.length > 0) {
-        var password = prompt('Masukkan password untuk menghapus:');
-
-        if (password === 'qwerty123') {
-          checkboxes.forEach(function(checkbox) {
-            checkbox.parentNode.parentNode.remove();
-          });
-
-          localStorage.setItem('kosakata', daftarKosakata.innerHTML);
-
-          alert('Kosa kata terpilih berhasil dihapus.');
-        } else {
-          alert('Password salah. Penghapusan dibatalkan.');
-        }
-      } else {
-        alert('Tidak ada kosa kata terpilih untuk dihapus.');
-      }
-    });
-  </script>
 </body>
 </html>
