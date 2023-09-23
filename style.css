@@ -1,7 +1,7 @@
 body {
     /*border: 1px solid red;*/
     padding: auto;
-    margin: auto; 
+    margin: auto;
 }
 
 .container {
@@ -18,7 +18,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
     position: sticky;
     top: 0;
-    z-index: 999;
+    z-index: 9;
 
 }
 .container-footer {
@@ -39,7 +39,7 @@ header {
     border-bottom: 1px solid;
     font-size: 50px;
     padding-bottom: 10px;
- 
+
 }
 
 form {
@@ -54,7 +54,7 @@ form input{
     margin-right: 10px;
     border-radius: 5px;
     border: none;
-    
+
 }
 
 form button{
@@ -74,20 +74,20 @@ header li a {
     padding-right: 20px;
     text-decoration: none;
     color: #333;
-    
+
 }
 
 main {
-    
+    z-index: 7;
     width: 60%;
-    
+
 }
 
 .slm {
     text-align: center;
     margin-bottom: 50px;
     border-bottom: 1px solid;
-    
+
 }
 
 section p {
@@ -111,7 +111,8 @@ table td{
 }
 
 footer {
-    background-color: #f2f7f5;
+    z-index: 7;
+    background: #f2f7f5;
     width: 60%;
     border-top: 1px solid;
     border-radius: 5px;
@@ -126,7 +127,7 @@ footer {
 .sosial-media-icons a {
     text-decoration: none;
     color: black;
-    
+
 }
 
 footer ul {
@@ -136,4 +137,42 @@ footer ul {
 
 footer li {
     padding-right: 10px;
+}
+
+#nightModeButton {
+  position: absolute;
+  right: 0;
+}
+
+/* Gaya default (mode terang) dan mode malam */
+body, header, a, footer {
+  transition: color 0.10s;
+}
+
+body.night-mode,
+body.night-mode header,
+body.night-mode header a{
+    background: #333;
+    color: #ffffff;
+}
+
+body.night-mode footer{
+  background: #333;
+  color: #ffffff
+}
+
+body.night-mode footer i{
+  background: #333;
+  color: #ffffff
+}
+
+/* style.css */
+
+img {
+    z-index: 6;
+    position: fixed;
+    right: 80px;
+    top: 100px;
+    width: 300px
+
 }

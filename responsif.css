@@ -42,7 +42,7 @@ header li a {
 
   main {
     width: auto;
-      padding: 10px;
+      padding: 5px;
   }
 
   section p {
@@ -61,16 +61,13 @@ header li a {
   }
 
   footer {
-    padding-top: 15px;
     text-align: center;
     display: inline;
-    width: auto;
+    width: 100%;
   }
   .container-footer {
     border-top: 1px solid ;
-    background-color: #f2f7f5;
     width: auto;
-    display: block;
   }
 
   footer ul {
@@ -84,7 +81,18 @@ header li a {
     background-color: aqua;
     padding: 10px;
   }
+  body.night-mode footer i {
+      background: #00FFFF;
+      color: #333;
+  }
+  img {
+      z-index: 6;
+      position: absolute;
+      right: 10px;
+      top: 700px;
+      width: 200px
 
+  }
 }
 
 /* CSS Responsif untuk Tablet */
