@@ -1,0 +1,71 @@
+/* Media Query untuk perangkat seluler dengan lebar kurang dari 768px */
+@media (max-width: 768px) {
+    header {
+        padding: 10px; /* Padding header yang lebih kecil pada layar kecil */
+        display: flex;
+        justify-content: left;
+    }
+
+    #name {
+        width: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        top: 0; /* Menghilangkan jarak atas pada layar kecil */
+        left: 0;
+        right: 0;
+        width: 100%;
+    }
+
+
+    main {
+        padding: 10px; /* Padding utama yang lebih kecil pada layar kecil */
+        width: auto;  
+
+    }
+
+    .career-goal, .about-me {
+        top: 0; /* Menghilangkan jarak atas pada layar kecil */
+        left: 0;
+        width: 100%;
+        border-radius: 15px;
+    }
+
+    .career-goal{
+        padding-top: 1px;
+    }
+
+    .about-me{
+        padding-bottom: 1px;
+    }
+    main p {
+        margin-left: 10px; /* Margin kiri yang lebih kecil pada teks layar kecil */
+        margin-right: 10px; /* Margin kanan yang lebih kecil pada teks layar kecil */
+        width: auto;
+    }
+
+    header img {
+        width: 120px; /* Ukuran gambar yang lebih kecil pada layar kecil */
+        height: 120px; /* Ukuran gambar yang lebih kecil pada layar kecil */
+        margin-bottom: 5px; /* Jarak bawah gambar yang lebih kecil pada layar kecil */
+
+    }
+
+    #name {
+        font-size: 20px; /* Ukuran font yang lebih kecil pada layar kecil */
+        width: 50%;
+        left: 0;
+        position: absolute;
+        top: 40px;
+        left: 130px;
+
+    }
+    ul {
+        left: 0;
+        bottom: 0;
+        text-align: center;
+    }
+
+}

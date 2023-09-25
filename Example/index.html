@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Penyimpanan Kosa Kata - InfinityFree</title>
-  <script>
-    function saveGlossary() {
-      var glossaryInput = document.getElementById("glossary-input");
-      var glossaryTerm = glossaryInput.value.trim();
-
-      if (glossaryTerm !== "") {
-        // Membuat objek XMLHttpRequest
-        var xhr = new XMLHttpRequest();
-        xhr.open("POST", "save_glossary.php", true);
-        xhr.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
-        xhr.onreadystatechange = function() {
-          if (xhr.readyState === 4 && xhr.status === 200) {
-            // Tindakan yang diambil setelah data disimpan
-            alert("Kosa kata berhasil disimpan!");
-          }
-        };
-
-        // Mengirim data kosa kata ke server
-        var data = "term=" + encodeURIComponent(glossaryTerm);
-        xhr.send(data);
-
-        // Menghapus nilai input setelah dikirim
-        glossaryInput.value = "";
-      }
-    }
-  </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="responsif.css">
+    <title>Portofolio</title>
 </head>
 <body>
-  <h2>Penyimpanan Kosa Kata - InfinityFree</h2>
-  
-  <label for="glossary-input">Kosa Kata:</label>
-  <input type="text" id="glossary-input">
-  <button onclick="saveGlossary()">Simpan</button>
+    <header>
+        <nav>
+            <img src="Maulana.jpg" alt="Profil" />
+            <p id="name">Maulana Muhammad Fajar</p>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
+    <main>
+        <div class="about-me">
+                <h3>A Little About me.</h3>
+            <p>
+            I don't have any work experience yet, but I have always been sharpening my skills, particularly in languages and computers. I actively take various courses to enhance my skills, especially in learning different languages. Currently, I am focused on learning English, Japanese, and Mandarin.
+
+            Additionally, I have a strong proficiency in operating computer systems and various applications, with a deep understanding of how they work and the ability to develop software. I also have knowledge of security systems and website development.
+        </div>
+
+        <div class="career-goal">
+                <h3>Career Goal</h3>
+            <p>
+            My future goal is to become a language expert capable of communicating in various languages and reaching the pinnacle of my professional career. I firmly believe that the philosophy of learning from mistakes is the key to creating a better future, one that will have a positive impact not only on myself but also on the people around me.
+            </p>
+        </div>
+    </main>
+
+    <footer>
+      
+    </footer>
 </body>
 </html>

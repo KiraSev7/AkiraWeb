@@ -1,0 +1,84 @@
+body {
+    font-family: Rubik, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    position: relative;
+    top: 53px;
+    left: 5px;
+    width: 60%;
+    border-bottom: 1px solid black;
+}
+
+main {
+    padding: 20px;
+   
+}
+
+.career-goal, .about-me {
+    position: relative;
+    top: 30px;
+    left: 270px;
+    width: 60%;
+    background-color: #f1f8fa;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.career-goal{
+    border-bottom: 1px solid black;
+}
+.about-me{
+    border-top: 1px solid black;
+}
+
+main p {
+    margin-left: 40px;
+    margin-right: 40px;
+    line-height: 25px;
+}
+
+header img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    margin: 0 auto;
+    float: left;
+    border-radius: 50%;
+}
+
+#name, ul {
+    position: relative;
+    width: 60%;
+    left: 40px;
+    display: flex;
+}
+
+ul {
+    bottom: 10px;
+}
+
+#name {
+    font-size: 25px;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+}
+
+li {
+    list-style: none;
+    margin-right: 30px;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
