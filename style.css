@@ -64,8 +64,6 @@ form button{
 }
 
 header ul {
-    padding-top: 10px;
-    padding-bottom: 10px;
     list-style: none;
     display: flex;
 }

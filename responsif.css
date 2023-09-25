@@ -14,13 +14,7 @@
     font-size: 25px;
   }
 
-  header ul {
-    display: inline;
-    text-align: center;
-  }
-header li a {
-  padding: 0;
-}
+
 
   form input {
     border: 1px solid;
