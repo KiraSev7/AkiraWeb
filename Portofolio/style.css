@@ -39,6 +39,13 @@ main {
 .about-me{
     border-top: 1px solid black;
 }
+.career-goal{
+    padding-top: 1px;
+}
+
+.about-me{
+    padding-bottom: 1px;
+}
 
 main p {
     margin-left: 40px;

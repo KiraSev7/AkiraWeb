@@ -24,10 +24,33 @@ function toggleNightMode() {
   }
 }
 
-// Mengatur status mode malam berdasarkan preferensi yang tersimpan
+// Menambahkan event listener ke tombol "Mode Malam"
+nightModeButton.addEventListener('click', toggleNightMode);
+
+// Memeriksa status mode malam saat halaman dimuat
 if (nightModeEnabled === 'true') {
   enableNightMode();
 }
 
-// Mengaktifkan atau menonaktifkan mode malam saat tombol diklik
-nightModeButton.addEventListener('click', toggleNightMode);
+// Fungsi untuk menampilkan dropdown saat tombol "Lessons" diklik
+function toggleDropdown() {
+    var dropdownContent = document.querySelector(".dropdown-content");
+    if (dropdownContent.style.display === "block") {
+        dropdownContent.style.display = "none";
+    } else {
+        dropdownContent.style.display = "block";
+    }
+}
+
+// Tambahkan event listener ke tombol "Lessons"
+document.querySelector(".dropbtn").addEventListener("click", toggleDropdown);
+
+// Tambahkan event listener ke elemen dokumen untuk menutup dropdown saat mengklik di luar dropdown
+document.addEventListener("click", function(event) {
+    var dropdownContent = document.querySelector(".dropdown-content");
+    var dropbtn = document.querySelector(".dropbtn");
+    
+    if (event.target !== dropbtn && event.target !== dropdownContent) {
+        dropdownContent.style.display = "none";
+    }
+});

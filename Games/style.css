@@ -1,0 +1,81 @@
+/* Gaya untuk elemen-elemen umum */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Gaya untuk kontainer permainan */
+#game-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid #000;
+    margin: 40px auto;
+    position: relative;
+    background-color: #111;
+}
+
+/* Gaya untuk ular */
+#snake {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+}
+
+/* Gaya untuk makanan */
+#food {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    position: absolute;
+}
+
+/* Gaya untuk kontrol */
+#controls {
+    margin-top: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 100px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #fff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background-color 0.2s; /* Efek perubahan warna saat hover */
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+/* Gaya untuk segmen tubuh ular */
+.segment {
+    width: 20px;
+    height: 20px;
+    background-color: green;
+    position: absolute;
+}
+
+#score{
+    text-align: right;
+}
+
+#left {
+    margin-right: 80px;
+}
+
+#right {
+    margin-left: 80px;
+}

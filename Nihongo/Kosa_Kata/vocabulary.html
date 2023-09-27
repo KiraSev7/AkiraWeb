@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Kosa Kata N5</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsif.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+</head>
+<body>
+  <div class="container">
+    <div class="main">
+    <h1>Kategori Bahasa</h1>
+  
+    <button onclick="showNextCategory()">Next</button>
+    
+    <div id="kategoriBahasa">
+      <div class="kategori" id="kategori1">
+        <h2>Kata Kerja :</h2>
+        <ul>
+          <li>食べる (taberu) - Makan</li>
+          <li>飲む (nomu) - Minum</li>
+          <li>行く (iku) - Pergi</li>
+          <li>来る (kuru) - Datang</li>
+          <li>見る (miru) - Melihat</li>
+          <li>聞く (kiku) - Mendengar/Menanyakan</li>
+          <li>話す (hanasu) - Berbicara/Berbicara dengan</li>
+          <li>書く (kaku) - Menulis</li>
+          <li>読む (yomu) - Membaca</li>
+          <li>知る (shiru) - Mengetahui</li>
+          <li>学ぶ (manabu) - Belajar</li>
+          <li>思う (omou) - Berpikir/Merasa</li>
+          <li>走る (hashiru) - Berlari</li>
+          <li>寝る (neru) - Tidur</li>
+          <li>起きる (okiru) - Bangun</li>
+          <li>待つ (matsu) - Menunggu</li>
+          <li>始める (hajimeru) - Memulai</li>
+          <li>終わる (owaru) - Selesai</li>
+          <li>愛する (aisuru) - Mencintai</li>
+          <li>する (suru) - Melakukan</li>
+          <li>来る (kuru) - Datang (digunakan dalam beberapa konteks lain)</li>
+        </ul>
+      </div>
+      <div class="kategori hidden" id="kategori2">
+        <h2>Kata Kerja 2 :</h2>
+        <ul>
+          <li>考える (kangaeru) - Memikirkan</li>
+          <li>手伝う (tetsudau) - Membantu</li>
+          <li>知っている (shitteiru) - Mengetahui (dalam konteks pengetahuan)</li>
+          <li>忘れる (wasureru) - Lupa</li>
+          <li>言う (iu) - Berkata/Mengatakan</li>
+          <li>聞こえる (kikoeru) - Terdengar</li>
+          <li>作る (tsukuru) - Membuat</li>
+          <li>買う (kau) - Membeli</li>
+          <li>売る (uru) - Menjual</li>
+          <li>遊ぶ (asobu) - Bermain</li>
+          <li>怒る (okoru) - Marah</li>
+          <li>笑う (warau) - Tertawa</li>
+          <li>泣く (naku) - Menangis</li>
+          <li>着る (kiru) - Mengenakan/Pakai (pakaian)</li>
+          <li>脱ぐ (nugu) - Membuka/Menanggalkan (pakaian)</li>
+          <li>歩く (aruku) - Berjalan</li>
+          <li>泳ぐ (oyogu) - Berenang</li>
+          <li>運転する (unten suru) - Mengemudi</li>
+          <li>料理する (ryouri suru) - Memasak</li>
+          <li>清掃する (seisou suru) - Membersihkan</li>
+          <li>運動する (undou suru) - Berolahraga</li>
+        </ul>
+      </div>
+      <div class="kategori hidden" id="kategori3">
+        <h2>Kata Sifat い (Warna) :</h2>
+        <ul>
+          <li>赤い (akai) - Merah</li>
+          <li>青い (aoi) - Biru</li>
+          <li>茶色い (chairoi) - Coklat</li>
+          <li>黒い (kuroi) - Hitam</li>
+          <li>白い (shiroi) - Putih</li>
+          <li>黄色い (kiiroi) - Kuning</li>
+        </ul>
+      </div>
+      <div class="kategori hidden" id="kategori4">
+        <h2>Kata Sifat い (Rasa) :</h2>
+        <ul>
+          <li>甘い (amai) - Manis</li>
+          <li>苦い (nigai) - Pahit</li>
+          <li>酸っぱい (suppai) - Asam</li>
+          <li>しょっぱい / 塩辛い (shoppai / shiokarai) - Asin</li>
+          <li>辛い (karai) - Pedas</li>
+        </ul>
+      </div>
+        <div class="kategori hidden" id="kategori5">
+        <h2>Kata Sifat い (Keadaan Cuaca / Suhu) :</h2>
+        <ul>
+          <li>明るい (akarui) - Terang</li>
+          <li>暗い (kurai) - Gelap</li>
+          <li>涼しい (suzushii) - Sejuk</li>
+          <li>暖かい (atatakai) - Hangat</li>
+          <li>暑い (atsui) - Panas (cuaca)</li>
+          <li>熱い (atsui) - Panas (benda)</li>
+          <li>寒い (samui) - Dingin (cuaca)</li>
+          <li>冷たい (tsumetai) - Dingin (benda/orang)</li>
+        </ul>
+      </div>
+        <div class="kategori hidden" id="kategori6">
+        <h2>Kata Sifat い (Ukuran) :</h2>
+        <ul>
+          <li>大きい (ookii) - Besar</li>
+          <li>小さい (chiisai) - Kecil</li>
+          <li>浅い (asai) - Dangkal</li>
+          <li>深い (fukai) - Dalam</li>
+          <li>高い (takai) - Tinggi, Mahal</li>
+          <li>低い (hikui) - Rendah</li>
+          <li>背が低い (se ga hikui) - Berbadan pendek</li>
+          <li>背が高い (se ga takai) - Berbadan tinggi</li>
+          <li>広い (hiroi) - Luas</li>
+          <li>狭い (semai) - Sempit</li>
+          <li>長い (nagai) - Panjang</li>
+          <li>短い (mijikai) - Pendek</li>
+        </ul>
+      </div>
+        <div class="kategori hidden" id="kategori7">
+        <h2>Kata Sifat い (Umum) :</h2>
+        <ul>
+          <li>頭がいい (atama ga ii) - Pandai</li>
+          <li>新しい (atarashii) - Baru</li>
+          <li>古い (furui) - Lama</li>
+          <li>いい / 良い (ii / yoi) - Bagus</li>
+          <li>悪い (warui) - Jelek</li>
+          <li>強い (tsuyoi) - Kuat</li>
+          <li>弱い (yowai) - Lemah</li>
+          <li>易しい (yasashi) - Mudah</li>
+          <li>難しい (muzukashii) - Sulit</li>
+          <li>うるさい (urusai) - Berisik/Cerewet</li>
+          <li>寂しい (sabishii) - Sepi</li>
+          <li>楽しい (tanoshii) - Menyenangkan</li>
+          <li>面白い (omoshiroi) - Menarik, Lucu</li>
+          <li>つまらない (tsumaranai) - Membosankan</li>
+          <li>嬉しい (ureshii) - Senang</li>
+          <li>悲しい (kanashii) - Sedih</li>
+          <li>かっこいい (kakkoii) - Keren</li>
+          <li>かわいい (kawaii) - Manis, Imut</li>
+          <li>凄い (sugoi) - Hebat</li>
+          <li>汚い (kitanai) - Kotor</li>
+          <li>怖い (kowai) - Menakutkan</li>
+          <li>恥ずかしい (hazukashii) - Malu</li>
+          <li>酷い (hidoi) - Kejam</li>
+          <li>忙しい (isogashii) - Sibuk</li>
+          <li>痛い (itai) - Sakit</li>
+          <li>厳しい (kibishii) - Tegas, Ketat</li>
+          <li>羨ましい (urayamashii) - Iri</li>
+          <li>珍しい (mezurashii) - Langka</li>
+          <li>眠い (nemui) - Mengantuk</li>
+          <li>丸い (marui) - Bulat</li>
+          <li>正しい (tadashii) - Benar</li>
+          <li>若い (wakai) - Muda</li>
+        </ul>
+      </div>
+      </div>
+    </div>
+  </div>
+ 
+  <script>
+    let currentCategory = 1;
+    const totalCategories = 7;
+
+    function showCategory(categoryNumber) {
+      for (let i = 1; i <= totalCategories; i++) {
+        const category = document.getElementById('kategori' + i);
+        if (i === categoryNumber) {
+          category.classList.remove('hidden');
+        } else {
+          category.classList.add('hidden');
+        }
+      }
+      currentCategory = categoryNumber;
+    }
+
+    function showNextCategory() {
+      currentCategory = (currentCategory % totalCategories) + 1;
+      showCategory(currentCategory);
+    }
+
+    function showPreviousCategory() {
+      currentCategory = (currentCategory - 2 + totalCategories) % totalCategories + 1;
+      showCategory(currentCategory);
+    }
+
+    showCategory(currentCategory);
+  </script>
+</body>
+</html>
