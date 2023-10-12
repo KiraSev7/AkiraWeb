@@ -1,177 +1,426 @@
 body {
     /*border: 1px solid red;*/
-    padding: auto;
-    margin: auto;
-}
-
-.container {
-    /*border: 1px solid green;*/
-    display: flex;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-
-}
-.container-header {
-    /*border: 1px solid green;*/
-    display: flex;
-    justify-content: center;
-    font-family: 'Courier New', Courier, monospace;
-    position: sticky;
-    top: 0;
-    z-index: 9;
-
-}
-.container-footer {
-       /*border: 1px solid green;*/
-       display: flex;
-       justify-content: center;
-       font-family: 'Courier New', Courier, monospace;
-}
-
-header {
-    border-radius: 5px;
-    background: #f2f7f5;
-    width: 60%;
-}
-
-.logo-web {
-    display: flex;
-    border-bottom: 1px solid;
-    font-size: 50px;
-    padding-bottom: 10px;
-
-}
-
-form {
-    display: flex;
-    margin: auto;
-    padding: auto;
-}
-
-form input{
-    height: 25px;
-    width: 300px;
-    margin-right: 10px;
-    border-radius: 5px;
-    border: none;
-
-}
-
-form button{
-    border: none;
-    border-radius: 5px;
-    background: #ffffff;
-}
-
-header ul {
-    list-style: none;
-    display: flex;
-}
-
-header li a {
-    padding-right: 20px;
-    text-decoration: none;
-    color: #333;
-
-}
-
-main {
-    z-index: 7;
-    width: 60%;
-
-}
-
-.slm {
-    text-align: center;
-    margin-bottom: 50px;
-    border-bottom: 1px solid;
-
-}
-
-section p {
-    padding-left: 80px;
-}
-
-table{
-    width: 70%;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    border-radius: 5px;
     position: relative;
-    left: 15%;
-    margin-bottom: 30px;
-    text-align: center;
-
-}
-
-table td{
-    width: auto;
-}
-
-footer {
-    z-index: 7;
-    background: #f2f7f5;
-    width: 60%;
-    border-top: 1px solid;
-    border-radius: 5px;
-    justify-content: center;
-    display: flex;
-}
-
-.sosial-media-icons {
-    list-style: none;
-}
-
-.sosial-media-icons a {
-    text-decoration: none;
-    color: black;
-
-}
-
-footer ul {
     padding: 0;
-    display: flex;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
 }
 
-footer li {
-    padding-right: 10px;
+/*Bagian Header*/
+
+#logo {
+    max-width: 180px;
+    margin-right: 40px;
+    pointer-events: none;
+
+}
+
+#search-input {
+    width: 300px;
+}
+
+#search-form button {
+    margin-left: 2%;
+    width: 50px;
+    border-radius: 5px;
+}
+
+#search-form {
+    margin-left: 20px;
 }
 
 #nightModeButton {
-  position: absolute;
-  right: 0;
+    background: white;
+    border: 1px solid;
+    position: fixed;
+    right: 0;
+    width: 100px;
+    height: 25px;
+    padding: 0;
+    border-radius: 5px;
+
+
 }
 
+#nightModeButton i {
+    font-size: 15px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+nav li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+nav ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    overflow: hidden;
+    background: #23FFED;
+    color: white;
+    border-radius: 10px;
+}
+
+header,
+main,
+footer {
+    position: relative;
+}
+
+/* Contoh CSS untuk header sticky */
+header.container {
+    position: sticky;
+
+    top: 0;
+    z-index: 3;
+}
+
+
+/*Bagian Main*/
+main {
+    overflow: hidden;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background: #F2F7F5;
+
+}
+
+.abc {
+    background: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.slm {
+    overflow: hidden;
+    padding: 10px;
+    margin-bottom: 10px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.content1,
+.content2 {
+    margin-top: 10px;
+}
+
+.content2,
+.content1 {
+    overflow: hidden;
+
+}
+
+
+
+#search-form {
+    margin-left: auto;
+}
+
+.data_search {
+    overflow: auto;
+    border: 5px solid #F2F7F5;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 20px;
+
+}
+
+.data_search ul {
+    margin: 0;
+    padding: 5px 50px;
+    margin: 5px;
+
+}
+
+#garis {
+    border-right: 1px solid;
+}
+
+.calendar {
+    border-radius: 10px;
+    background-color: white;
+
+}
+
+.calendar {
+    overflow: auto;
+    max-width: auto;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+td.current-day {
+    background-color: #f2f7f5;
+    border-radius: 10px;
+}
+
+#currentMonth {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#currentDateTime {
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.hiragana,
+.katakana {
+    background-color: white;
+    border: 5px solid #F2F7F5;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.hiragana-row,
+.katakana-row {
+    display: flex;
+    justify-content: center;
+}
+
+.hiragana-cell,
+.katakana-cell {
+    width: 90px;
+    /* Sesuaikan lebar sel sesuai kebutuhan */
+    height: 20px;
+    /* Sesuaikan tinggi sel sesuai kebutuhan */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 1px;
+    margin: 2px;
+    border-radius: 5px;
+    background: #F2F7F5;
+
+}
+
+.hiragana-table,
+.katakana-table {
+    position: relative;
+    z-index: 2;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 5px;
+}
+
+
+.hiragana p,
+.katakana p {
+    padding: 5px;
+    border-radius: 10px;
+    margin: 5px 0px;
+    border-top: 1px solid;
+}
+
+.images {
+    padding: 5px;
+    background: white;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+}
+
+button {
+    border: none;
+}
+
+.slideshow {
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+}
+
+.slide {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    overflow: auto;
+}
+
+.slideshow img {
+    height: 100%;
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+.a-z {
+    overflow: auto;
+    background: white;
+    border-radius: 10px;
+}
+
+.a-z ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.a-z li {
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid;
+    background: aqua;
+    padding: 5px 13px;
+}
+
+.a-z a {
+    text-decoration: none;
+    color: black;
+}
+
+#prevButton,
+#nextButton {
+    background: none;
+}
+
+/*Bagian Footer*/
+
+
+footer {
+    overflow: hidden;
+    padding: 10px 0px;
+    border-radius: 10px;
+    background: #23FFED;
+    color: black;
+}
+
+footer div ul li {
+    list-style: none;
+}
+
+
+
 /* Gaya default (mode terang) dan mode malam */
-body, header, a, footer {
-  transition: color 0.10s;
+body,
+header,
+a,
+footer {
+    transition: color 0.10s;
 }
 
 body.night-mode,
 body.night-mode header,
-body.night-mode header a{
+body.night-mode nav,
+body.night-mode .slm,
+body.night-mode .images,
+body.night-mode .abc,
+body.night-mode .a-z ul,
+body.night-mode .hiragana p,
+body.night-mode .hiragana-table,
+body.night-mode .katakana p,
+body.night-mode .katakana-table,
+body.night-mode .data_search,
+body.night-mode .calendar {
     background: #333;
     color: #ffffff;
 }
 
-body.night-mode footer{
-  background: #333;
-  color: #ffffff
+body.night-mode .current-day {
+    color: black;
 }
 
-body.night-mode footer i{
-  background: #333;
-  color: #ffffff
+body.night-mode .hiragana-cell,
+body.night-mode .katakana-cell {
+    color: black;
+}
+
+body.night-mode footer {
+    background: #333;
+    color: #ffffff
+}
+
+body.night-mode footer i {
+    background: #333;
+    color: #ffffff
+}
+
+.a-z li {
+    position: relative;
+    z-index: 2;
+}
+
+footer {
+    z-index: 2;
+}
+
+.footer-column {
+    display: flex;
+}
+
+.footer-column div {
+    margin-left: 60px;
 }
 
 /* style.css */
+#rem {
+    z-index: 1;
+    /* Atur z-index sesuai kebutuhan */
+    position: absolute;
+    width: 20em;
+    right: 0;
+    bottom: 0;
 
-img {
-    z-index: 6;
-    position: fixed;
-    right: 80px;
-    top: 100px;
-    width: 300px
+    pointer-events: none;
+    /* Membuat gambar tidak dapat diinteraksi */
 }
 
 
@@ -182,18 +431,18 @@ img {
 }
 
 .dropdown-content {
+    z-index: 3;
+    width: auto;
     display: none;
-    position: absolute;
-    background-color: #f2f7f5; /* Warna latar belakang dropdown */
-    width: 60%;
-    z-index: 2;
-    height: 20%;
+    position: sticky;
+    background-color: aqua;
+    /* Warna latar belakang dropdown */
     text-align: center;
     border-radius: 5px;
 }
 
 .dropdown-content a {
-    padding: 12px 16px;
+    padding: 8px;
     text-decoration: none;
     display: block;
     color: black;
@@ -202,6 +451,33 @@ img {
 }
 
 .dropdown-content a:hover {
-     background-color: #333; /* Efek hover saat mengarahkan kursor ke opsi dropdown */
-     color: white;
+    background-color: #333;
+    /* Efek hover saat mengarahkan kursor ke opsi dropdown */
+    color: white;
+}
+
+#search-form {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+/* Gaya input pencarian */
+#search-input {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+/* Gaya tombol pencarian */
+#search-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+/* Efek hover pada tombol pencarian */
+#search-form button:hover {
+    background-color: #0056b3;
 }
