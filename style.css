@@ -481,3 +481,25 @@ footer {
 #search-form button:hover {
     background-color: #0056b3;
 }
+
+
+        .drop {
+            width: 2px;
+            height: 10px;
+            border-radius: 5px;
+            background-color: blue; /* Warna tetesan hujan */
+            position: absolute;
+            opacity: 0;
+            animation: fall 3s linear infinite; /* Animasi jatuh */
+        }
+
+        @keyframes fall {
+            0% {
+                opacity: 0.6;
+                transform: translate(0, -10px);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(10px, 100vh); /* Hingga ke bagian bawah halaman */
+            }
+        }

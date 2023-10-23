@@ -186,3 +186,26 @@ document.querySelector('a[href="https://www.linkedin.com/in/maulana-muhammad-faj
 
 // document.oncontextmenu = function () { return false; } // Melarang klik kanan
 document.onselectstart = function() { return false; } // Melarang pemilihan teks
+
+
+function createRaindrop() {
+    const drop = document.createElement('div');
+    drop.classList.add('drop');
+    
+    // Mengatur posisi elemen tetesan hujan dalam elemen <header>
+    const header = document.querySelector('nav');
+    const headerRect = header.getBoundingClientRect();
+    const leftPosition = Math.random() * headerRect.width;
+    drop.style.left = leftPosition + 'px';
+    
+    // Menambahkan tetesan hujan ke dalam elemen <header>
+    header.appendChild(drop);
+    
+    // Menghapus tetesan setelah 2 detik
+    setTimeout(() => {
+        header.removeChild(drop);
+    }, 1000);
+}
+
+// Membuat tetesan hujan setiap 100ms (0.1 detik)
+setInterval(createRaindrop, 100);
