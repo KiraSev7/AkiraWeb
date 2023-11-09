@@ -166,46 +166,5 @@ document.querySelector('a[href="Portofolio/portofolio.html"]').addEventListener(
     checkPassword();
 });
 
-
-function checkPassword() {
-    var password = prompt("Masukkan kata sandi:");
-
-    // Ganti "passwordanda" dengan kata sandi yang Anda inginkan
-    if (password === "Arashi") {
-        window.location.href = "https://www.linkedin.com/in/maulana-muhammad-fajar-55863225a"; // Tautan LinkedIn
-    } else {
-        alert("Kata sandi salah. Akses ditolak.");
-    }
-}
-
-// Panggil fungsi checkPassword() saat tautan LinkedIn diklik
-document.querySelector('a[href="https://www.linkedin.com/in/maulana-muhammad-fajar-55863225a"]').addEventListener('click', function(event) {
-    event.preventDefault();
-    checkPassword();
-});
-
-// document.oncontextmenu = function () { return false; } // Melarang klik kanan
-document.onselectstart = function() { return false; } // Melarang pemilihan teks
-
-
-function createRaindrop() {
-    const drop = document.createElement('div');
-    drop.classList.add('drop');
-    
-    // Mengatur posisi elemen tetesan hujan dalam elemen <header>
-    const header = document.querySelector('nav');
-    const headerRect = header.getBoundingClientRect();
-    const leftPosition = Math.random() * headerRect.width;
-    drop.style.left = leftPosition + 'px';
-    
-    // Menambahkan tetesan hujan ke dalam elemen <header>
-    header.appendChild(drop);
-    
-    // Menghapus tetesan setelah 2 detik
-    setTimeout(() => {
-        header.removeChild(drop);
-    }, 1000);
-}
-
-// Membuat tetesan hujan setiap 100ms (0.1 detik)
-setInterval(createRaindrop, 100);
+document.oncontextmenu = function () { return false; } // Melarang klik kanan
+//document.onselectstart = function() { return false; } // Melarang pemilihan teks
