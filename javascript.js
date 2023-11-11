@@ -167,4 +167,4 @@ document.querySelector('a[href="Portofolio/portofolio.html"]').addEventListener(
 });
 
 document.oncontextmenu = function () { return false; } // Melarang klik kanan
-//document.onselectstart = function() { return false; } // Melarang pemilihan teks
+document.onselectstart = function() { return false; } // Melarang pemilihan teks
