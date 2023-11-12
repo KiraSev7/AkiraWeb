@@ -86,7 +86,6 @@ footer {
 /* Contoh CSS untuk header sticky */
 header.container {
     position: sticky;
-
     top: 0;
     z-index: 3;
 }
@@ -95,12 +94,14 @@ header.container {
 /*Bagian Main*/
 main {
     overflow: hidden;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 5px;
     border-radius: 10px;
-    background: #F2F7F5;
 
 }
+.slm, .images {
+    border: 1px solid gray;
+}
+
 
 .abc {
     background: white;
@@ -503,3 +504,24 @@ footer {
                 transform: translate(10px, 100vh); /* Hingga ke bagian bawah halaman */
             }
         }
+
+        .data_search{
+    border: 1px solid gray;
+}
+.katakana,.hiragana{
+    border: 1px solid gray;
+
+}
+.hiragana-table, .katakana-table{
+    margin-bottom: 2px;
+    border: 1px solid white;
+    
+}
+.hiragana p, .katakana p {
+    margin: 1px;
+    border: 1px solid gray;
+
+}
+.hiragana-cell,.katakana-cell{
+    background-color: aqua;
+}

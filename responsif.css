@@ -107,6 +107,34 @@
     .dropdown-content a {
       font-size: 15px;
 }
+.abc{
+    display: flex;
+    flex-direction: column;
+}
+.data_search{
+    border: 1px solid gray;
+}
+.katakana,.hiragana{
+    border: 1px solid gray;
+
+}
+.hiragana-table, .katakana-table{
+    margin-bottom: 2px;
+    
+}
+.hiragana p, .katakana p {
+    margin: 1px;
+    border: 1px solid gray;
+
+}
+.hiragana-cell,.katakana-cell{
+    background-color: aqua;
+}
+.calendar td{
+    position: relative;
+    z-index: 2;
+}
+
 }
 
 @media only screen and (max-width: 768px) {
