@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow: hidden;
+
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.content {
+    overflow: hidden;
+    position: absolute;
+    width: 95%;
+}
+
+.content ol li {
+    color: white;
+    border: 1px solid gray;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 20px;
+    margin: 10px 0px;
+}
+
+.content ol {
+    padding: 0;
+    margin: 0;
+}
+
+.c1{
+	overflow: hidden;
+	top: 65px;
+	color: white;
+	height: 0;
+	width: 95%;
+	transition: height 0.3s ease; /* Efek transisi */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.home{
+    border: 1px solid gray;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 20px;
+    text-decoration: none;
+	position: absolute;
+	top: 20px;
+	left: 0;
+}
+
+#img1{
+    height: 100%;
+}
