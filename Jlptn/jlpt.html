@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Mapping Sederhana</title>
+    <style>
+        body {
+            background-color: #282c36; /* Warna latar belakang yang lebih modern */
+            color: #ffffff; /* Warna teks putih */
+            font-family: 'Roboto', sans-serif; /* Gunakan font yang lebih modern */
+            margin: 0;
+        }
+
+        #mindmap {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .node {
+            border: 1px solid #4d4d4d; /* Warna garis tepi lebih gelap */
+            background-color: #333; /* Warna latar belakang yang lebih gelap */
+            padding: 10px;
+            border-radius: 8px;
+            margin: 5px;
+            width: 200px;
+            transition: background-color 0.3s ease; /* Efek transisi untuk perubahan warna latar belakang */
+            cursor: pointer;
+        }
+
+        .node.active {
+            background-color: #61dafb; /* Warna latar belakang saat diaktifkan */
+        }
+
+        .node .title {
+            font-weight: bold;
+            font-size: 16px;
+            color: #ffffff; /* Warna teks putih */
+        }
+
+        .node ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .node ul li {
+            margin: 5px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ffffff; /* Warna teks putih */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="mindmap">
+        <div class="node">
+            <span class="title">JLPT N4</span>
+            <ul>
+                <li class="node">
+                    <span class="title">Bab 1</span>
+                    <ul>
+                        <a href="bab1/bab1.1.html">
+                            <li class="node">
+                                <span class="title">Membicarakan tempat Anda tinggal</span>
+                            </li>
+                        </a>
+                        <a href="bab1/bab1.2.html">
+                            <li class="node">
+                                <span class="title">Membicarakan dengan siapa Anda tinggal</span>
+                            </li>
+                        </a>
+                        <a href="bab1/bab1.3.html">
+                            <li class="node">
+                                <span class="title">Menjelaskan hubungan</span>
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="node">
+                    <span class="title">Bab 2</span>
+                    <ul>
+                        <a href="#">
+                            <li class="node">
+                                <span class="title">Mengatakan tempat Anda tinggal di masa depan</span>
+                            </li>
+                        </a>
+                        <a href="bab2/bab2.2.html">
+                            <li class="node">
+                                <span class="title">Membicarakan pernikahan</span>
+                            </li>
+                        </a>
+                        <a href="bab2/bab2.3.html">
+                            <li class="node">
+                                <span class="title">Mengetahui pernikahan Jepang</span>
+                            </li>
+                        </a>
+                        <a href="bab2/bab2.4.html">
+                            <li class="node">
+                                <span class="title">Membicarakan hubungan</span>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li class="node">
+                                <span class="title">Bagian Kanji 1</span>
+                            </li>
+                        </a>
+                        <a href="bab2/bab2.6.html">
+                            <li class="node">
+                                <span class="title">Memahami hubungan orang</span>
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+                <li class="node">
+                    <span class="title">Bab 3</span>
+                    <ul>
+                        <a href="">
+                            <li class="node">
+                                <span class="title">Menghitung orang</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="node">
+                                <span class="title">Menghitug hewan</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="node">
+                                <span class="title">Menghitung beragam kata benda</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="node">
+                                <span class="title">Menghitung objek panjang, rata dan besar</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="node">
+                                <span class="title">Menghitung objek sehari-hari</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="node">
+                                <span class="title">Bagian Kanji 2</span>
+                            </li>
+                        </a>
+                        <a href="">
+                            <li class="node">
+                                <span class="title">Praktik memakai penghitung</span>
+                            </li>
+                        </a>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        const nodes = document.querySelectorAll('.node');
+
+        nodes.forEach(node => {
+            node.addEventListener('click', () => {
+                node.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
