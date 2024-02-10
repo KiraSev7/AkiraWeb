@@ -98,20 +98,11 @@ main {
     border-radius: 10px;
 
 }
-.slm, .images {
+
+.slm,
+.images {
     border: 1px solid gray;
 }
-
-
-.abc {
-    background: white;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-}
-
 
 .slm {
     overflow: hidden;
@@ -121,18 +112,6 @@ main {
     text-align: center;
     border-radius: 10px;
 }
-
-.content1,
-.content2 {
-    margin-top: 10px;
-}
-
-.content2,
-.content1 {
-    overflow: hidden;
-
-}
-
 
 
 #search-form {
@@ -166,13 +145,6 @@ main {
 
 }
 
-.calendar {
-    overflow: auto;
-    max-width: auto;
-    margin: 0 auto;
-    text-align: center;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -187,119 +159,11 @@ button {
     cursor: pointer;
 }
 
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-th,
-td {
-    border: 1px solid #ddd;
-    padding: 10px;
-}
-
-td.current-day {
-    background-color: #f2f7f5;
-    border-radius: 10px;
-}
-
-#currentMonth {
-    font-size: 24px;
-    font-weight: bold;
-}
-
-#currentDateTime {
-    position: relative;
-    z-index: 2;
-    margin-top: 20px;
-    font-size: 18px;
-}
-
-.hiragana,
-.katakana {
-    background-color: white;
-    border: 5px solid #F2F7F5;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.hiragana-row,
-.katakana-row {
-    display: flex;
-    justify-content: center;
-}
-
-.hiragana-cell,
-.katakana-cell {
-    width: 90px;
-    /* Sesuaikan lebar sel sesuai kebutuhan */
-    height: 20px;
-    /* Sesuaikan tinggi sel sesuai kebutuhan */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 1px;
-    margin: 2px;
-    border-radius: 5px;
-    background: #F2F7F5;
-
-}
-
-.hiragana-table,
-.katakana-table {
-    position: relative;
-    z-index: 2;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    border-radius: 5px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 5px;
-}
-
-
-.hiragana p,
-.katakana p {
-    padding: 5px;
-    border-radius: 10px;
-    margin: 5px 0px;
-    border-top: 1px solid;
-}
-
-.images {
-    padding: 5px;
-    background: white;
-    display: grid;
-    place-items: center;
-    border-radius: 10px;
-}
 
 button {
     border: none;
 }
 
-.slideshow {
-    height: 400px;
-    overflow: hidden;
-    display: flex;
-}
-
-.slide {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.images {
-    overflow: auto;
-}
-
-.slideshow img {
-    height: 100%;
-    border-radius: 10px;
-    pointer-events: none;
-}
 
 .a-z {
     overflow: auto;
@@ -328,10 +192,6 @@ button {
     color: black;
 }
 
-#prevButton,
-#nextButton {
-    background: none;
-}
 
 /*Bagian Footer*/
 
@@ -484,44 +344,162 @@ footer {
 }
 
 
-        .drop {
-            width: 2px;
-            height: 10px;
-            border-radius: 5px;
-            background-color: blue; /* Warna tetesan hujan */
-            position: absolute;
-            opacity: 0;
-            animation: fall 3s linear infinite; /* Animasi jatuh */
-        }
+.drop {
+    width: 2px;
+    height: 10px;
+    border-radius: 5px;
+    background-color: blue;
+    /* Warna tetesan hujan */
+    position: absolute;
+    opacity: 0;
+    animation: fall 3s linear infinite;
+    /* Animasi jatuh */
+}
 
-        @keyframes fall {
-            0% {
-                opacity: 0.6;
-                transform: translate(0, -10px);
-            }
-            100% {
-                opacity: 0;
-                transform: translate(10px, 100vh); /* Hingga ke bagian bawah halaman */
-            }
-        }
+@keyframes fall {
+    0% {
+        opacity: 0.6;
+        transform: translate(0, -10px);
+    }
 
-        .data_search{
+    100% {
+        opacity: 0;
+        transform: translate(10px, 100vh);
+        /* Hingga ke bagian bawah halaman */
+    }
+}
+
+.data_search {
     border: 1px solid gray;
 }
-.katakana,.hiragana{
+
+.katakana,
+.hiragana {
     border: 1px solid gray;
 
 }
-.hiragana-table, .katakana-table{
+
+.hiragana-table,
+.katakana-table {
     margin-bottom: 2px;
     border: 1px solid white;
-    
+
 }
-.hiragana p, .katakana p {
+
+.hiragana p,
+.katakana p {
     margin: 1px;
     border: 1px solid gray;
 
 }
-.hiragana-cell,.katakana-cell{
+
+.hiragana-cell,
+.katakana-cell {
     background-color: aqua;
+}
+
+
+.container2 {
+    margin-top: 50px;
+    perspective: 900px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.canvas {
+    width: 500px;
+    height: 500px;
+    transform-style: preserve-3d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: kagi;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+
+}
+
+.cube {
+    color: white;
+    font-size: 30px;
+    display: flex;
+    width: 300px;
+    height: 300px;
+}
+
+.number1,
+.number2,
+.number3,
+.number4 {
+    border: 1px solid blue;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col {
+    width: 100%;
+    height: 100%;
+}
+
+.back,
+.left,
+.right,
+.top,
+.bottom {
+    position: absolute;
+}
+
+.front {
+    transform: translatez(150px);
+}
+
+.back {
+    transform: rotateX(180deg) translatez(150px);
+}
+
+.left {
+    transform: rotateY(90deg) translatez(150px);
+}
+
+.right {
+    transform: rotateY(-90deg) translatez(150px);
+}
+
+.top {
+    transform: rotateX(90deg) translatez(150px);
+}
+
+.bottom {
+    transform: rotateX(270deg) translatez(150px);
+}
+
+.number1 {
+    border: 1px solid #10202A;
+}
+
+.number2 {
+    border: 1px solid aqua;
+}
+
+.number3 {
+    border: 1px solid white;
+}
+
+.number4 {
+    border: 1px solid blue;
+}
+
+@keyframes kagi {
+    0% {
+        transform: rotateY(0deg) rotateX(0deg);
+    }
+
+    100% {
+        transform: rotateY(360deg) rotateX(360deg);
+    }
 }
