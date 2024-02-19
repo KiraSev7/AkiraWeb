@@ -7,30 +7,39 @@
     <title>Lebih Banyak Kata Sifat na-!</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -41,12 +50,27 @@
         margin: 10px 0;
         line-height: 1.6;
     }
-    li {
-        list-style-type: none;
-    }
 
     strong {
         color: #28a745;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th,
+    td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #007bff;
+        color: #ffffff;
     }
     </style>
 </head>
@@ -60,12 +84,28 @@
         <p><strong>私はりょうりがへたです。</strong><br>(Saya buruk dalam memasak.)</p>
         <h2>Kiat untuk Anda!</h2>
         <p>Kata benda yang kita akan lihat dapat dipakai sebagai objek atau sebagai nama untuk kegiatan.</p>
-        <ul>
-            <li><strong>うた / 歌 / uta</strong> (lagu/bernyanyi)</li>
-            <li><strong>え / 絵 / e</strong> (gambar/menggambar)</li>
-            <li><strong>しゃしん / 写真 / shashin</strong> (foto/fotografi)</li>
-            <li><strong>りょうり / 料理 / ryouri</strong> (hidangan/memasak)</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Kata Benda</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>うた / 歌 / uta</td>
+                <td>lagu/bernyanyi</td>
+            </tr>
+            <tr>
+                <td>え / 絵 / e</td>
+                <td>gambar/menggambar</td>
+            </tr>
+            <tr>
+                <td>しゃしん / 写真 / shashin</td>
+                <td>foto/fotografi</td>
+            </tr>
+            <tr>
+                <td>りょうり / 料理 / ryouri</td>
+                <td>hidangan/memasak</td>
+            </tr>
+        </table>
     </div>
 </body>
 

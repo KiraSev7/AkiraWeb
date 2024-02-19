@@ -7,30 +7,39 @@
     <title>せつめいしましょう - Mari menjelaskannya</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: 100vh;
+        }
     }
 
     h1 {
@@ -42,13 +51,22 @@
         margin-bottom: 10px;
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
     }
 
-    li {
-        margin-bottom: 5px;
+    th,
+    td {
+        border: 1px solid #61dafb;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #61dafb;
+        color: #ffffff;
     }
 
     p:last-child {
@@ -68,10 +86,21 @@
             私はてが大きいです (Saya bertangan besar) dan 私のては大きいです (tangan saya itu besar) kurang lebih berarti
             sama.
         </p>
-        <ul>
-            <li><strong>私はてが大きいです。</strong> - Saya bertangan besar.</li>
-            <li><strong>私のかれはかみがながいです。</strong> - Kekasih saya berambut panjang.</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Contoh Kalimat</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>私はてが大きいです。</td>
+                </tr>
+                <tr>
+                    <td>私のかれはかみがながいです。</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 

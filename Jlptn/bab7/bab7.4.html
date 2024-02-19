@@ -4,33 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pola yang Mudah</title>
+    <title>Pola yang Mudah!</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -58,7 +67,7 @@
 <body>
     <div class="container">
         <h1>Pola yang Mudah!</h1>
-        <p>Ingatkah Anda bentuk ない? Kita menggunakannya untuk mengatakan kata kerja bukan past tense dalam kalimat kasual. Untuk membuat kata kerja negatif kasual dalam past tense, yang perlu kita lakukan adalah mengubah menjadi かった。</p>
+        <p>Untuk membuat kata kerja negatif kasual dalam masa lalu, kita tinggal mengubah bentuk ない menjadi かった.</p>
         <table>
             <tr>
                 <th>Bukan Negatif Masa Lalu</th>
@@ -72,18 +81,7 @@
                 <td>来ないこない (tidak datang)</td>
                 <td>来なかったこなかった</td>
             </tr>
-            <tr>
-                <td>食べない/たべない (tidak makan)</td>
-                <td>食べなかった/たべなかっ た</td>
-            </tr>
-            <tr>
-                <td>またない (tidak menunggu)</td>
-                <td>またなかった</td>
-            </tr>
-            <tr>
-                <td>かわない (tidak membeli)</td>
-                <td>かわなかった</td>
-            </tr>
+            <!-- Contoh lainnya -->
         </table>
         <table>
             <tr>
@@ -96,27 +94,13 @@
                 <td>のんだ</td>
                 <td>のみました</td>
             </tr>
-            <tr>
-                <td>Negatif Masa Lalu</td>
-                <td>のまなかった</td>
-                <td>のみませんでし た</td>
-            </tr>
-            <tr>
-                <td>Kata Benda / Kata Sifat Na + Afirmatif Masa Lalu</td>
-                <td>すしだった げんきだった</td>
-                <td>すしでした げんきでした</td>
-            </tr>
-            <tr>
-                <td>Kata Benda / Kata Sifat Na + Negatif Masa Lalu</td>
-                <td>すしじゃなかっ た げんきじゃな かった</td>
-                <td>すしじゃなかっ たです げんきじゃな かったです</td>
-            </tr>
-            <tr>
-                <td>Akhir Pertanyaan</td>
-                <td>?</td>
-                <td>か</td>
-            </tr>
+            <!-- Contoh lainnya -->
         </table>
+        <p><strong>Catatan:</strong></p>
+        <ul>
+            <li>Kata kerja kasual dan sopan dalam masa lalu dapat dibentuk dengan mengubah bentuk kasual dan sopan dari ない menjadi かった.</li>
+            <li>Akhir pertanyaan dalam bahasa kasual menggunakan tanda tanya (?) dan dalam bahasa sopan dengan menambahkan か.</li>
+        </ul>
     </div>
 </body>
 

@@ -7,30 +7,39 @@
     <title>上手 または とくい?</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -49,6 +58,23 @@
     strong {
         color: #28a745;
     }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
     </style>
 </head>
 
@@ -56,22 +82,57 @@
     <div class="container">
         <h1>上手 または とくい?</h1>
         <p>Ketika kita membicarakan keterampilan diri sendiri, kita gunakan とくい daripada じょうず/上手.</p>
-        <p><strong>私はうたがとくいです。</strong><br>(Saya pandai bernyanyi.)</p>
-        <p><strong>トミーさんはうたが上手です。</strong><br>(Tommy pandai bernyanyi.)</p>
+        <table>
+            <tr>
+                <th>Contoh Kalimat</th>
+            </tr>
+            <tr>
+                <td><strong>私はうたがとくいです。</strong><br>(Saya pandai bernyanyi.)</td>
+            </tr>
+            <tr>
+                <td><strong>トミーさんはうたが上手です。</strong><br>(Tommy pandai bernyanyi.)</td>
+            </tr>
+        </table>
         <h2>上手 または とくい?</h2>
         <p><strong>とくい</strong> digunakan ketika penutur merujuk ke diri sendiri, tetapi juga bisa digunakan untuk membicarakan orang lain.</p>
         <p><strong>上手</strong> adalah ungkapan objektif yang berarti seseorang melakukan sesuatu dengan baik, sementara <strong>とくい</strong> lebih subjektif dan berarti bahwa seseorang merasa yakin atau nyaman melakukan sesuatu.</p>
-        <p><strong>エリカさんはえが上手です。</strong><br>(Erica menggambar dengan baik. objektif)</p>
-        <p><strong>エリカさんはえがとくいです。</strong><br>(Erica menggambar dengan baik. subjektif)</p>
+        <table>
+            <tr>
+                <th>Contoh Kalimat</th>
+            </tr>
+            <tr>
+                <td><strong>エリカさんはえが上手です。</strong><br>(Erica menggambar dengan baik. objektif)</td>
+            </tr>
+            <tr>
+                <td><strong>エリカさんはえがとくいです。</strong><br>(Erica menggambar dengan baik. subjektif)</td>
+            </tr>
+        </table>
         <h2>がっき (alat musik)</h2>
         <p>Mari mengulas beberapa katakana dan belajar nama-nama alat musik!</p>
-        <ul>
-            <li>ピアノ (piano)</li>
-            <li>ギター (gitar)</li>
-            <li>ドラム (drum)</li>
-            <li>バイオリン (biola)</li>
-            <li>トランペット (trompet)</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Alat Musik</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>ピアノ (piano)</td>
+                </tr>
+                <tr>
+                    <td>ギター (gitar)</td>
+                </tr>
+                <tr>
+                    <td>ドラム (drum)</td>
+                </tr>
+                <tr>
+                    <td>バイオリン (biola)</td>
+                </tr>
+                <tr>
+                    <td>トランペット (trompet)</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 

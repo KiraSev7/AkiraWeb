@@ -7,30 +7,39 @@
     <title>Sikap Orang Jepang</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: 100vh;
+        }
     }
 
     h1 {
@@ -45,18 +54,44 @@
     strong {
         color: #28a745;
     }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
     </style>
 </head>
 
 <body>
     <div class="container">
         <h1>Sikap Orang Jepang</h1>
-        <p>Orang Jepang cenderung sangat sederhana tentang diri mereka. Jika seseorang memuji mereka, lazimnya akan ditolak, seperti di bawah ini:</p>
-        <p><strong>日本ごが上手ですね。</strong><br>(Kamu pandai dalam bahasa Jepang, bukan begitu?)</p>
-        <p><strong>いいえ、まだまだです。</strong><br>(Tidak, saya belum pandai.)</p>
+        <p>Orang Jepang cenderung sangat sederhana tentang diri mereka. Jika seseorang memuji mereka, lazimnya akan ditolak, seperti di bawah.</p>
         <h2>Mari Fokus pada Kanji!</h2>
         <p><strong>じょうず</strong> ditulis dengan kanji untuk "naik" dan "tangan", yang bersama-sama berarti "mahir".</p>
         <p><strong>へた</strong> ditulis dengan "turun" dan "tangan", bersama-sama berarti "tidak mahir".</p>
+        <h2>Tabel Sikap Orang Jepang</h2>
+        <table>
+            <tr>
+                <th>Kalimat</th>
+                <th>Jawaban</th>
+            </tr>
+            <tr>
+                <td>日本ごが上手ですね。</td>
+                <td>いいえ、まだまだです。</td>
+            </tr>
+        </table>
     </div>
 </body>
 

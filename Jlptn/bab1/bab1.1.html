@@ -6,42 +6,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kiat untuk Anda!</title>
     <style type="text/css">
-    body {
-        margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f8f8;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Menetapkan tinggi body menjadi 100% dari viewport height */
+}
 
-        /* Gunakan font yang lebih modern */
-    }
+.container {
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
 
+h1 {
+    color: #3498db;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+}
+
+.container p:first-child {
+    font-weight: bold;
+}
+
+.container p:nth-child(2) {
+    font-style: italic;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
-        text-align: center;
+        padding: 15px;
     }
 
     h1 {
-        color: #61dafb;
-        /* Warna judul yang menarik */
+        font-size: 24px;
     }
 
     p {
-        line-height: 1.6;
-        /* Jarak antar baris yang nyaman */
+        font-size: 16px;
     }
+}
+
+/* Optional: Add hover effect to the container */
+.container:hover {
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Optional: Style links */
+a {
+    color: #e74c3c;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #c0392b;
+}
     </style>
 </head>
 

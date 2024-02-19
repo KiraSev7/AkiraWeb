@@ -7,38 +7,55 @@
     <title>Belajar Bahasa Jepang (Bagian 6)</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
         color: #007bff;
     }
 
-    p {
-        margin-bottom: 15px;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
     }
 
     ul {
@@ -51,19 +68,56 @@
 <body>
     <div class="container">
         <h1>Belajar Bahasa Jepang (Bagian 6)</h1>
+        <table>
+            <tr>
+                <th>Kata Kerja</th>
+                <th>Kanji</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>だす</td>
+                <td>出す</td>
+                <td>Memberi, Memindahkan sesuatu dari dalam ke luar</td>
+            </tr>
+        </table>
         <p><strong>かんじを読みましょう! (Ayo Baca Kanji!)</strong></p>
         <p>Ingatkah Anda kata kerja だす? Kita telah melihatnya pada kalimat 「くすりをだしま す。」 (Saya akan meresepkan obat.)</p>
         <p>Bentuk kanji dari だす ditulis 出す!</p>
         <p>Kata kerja 出す/ だす berarti "memberi" atau "memindahkan sesuatu dari dalam ke luar", dan dapat digunakan untuk beragam kesempatan. Mari lihat caranya!</p>
-        <ul>
-            <li>くすりを出す (meresepkan obat)</li>
-            <li>てがみを出す (mengirim surat)</li>
-            <li>おかねを出す (membayar uang)</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Kata Kerja</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>くすりを出す</td>
+                <td>Meresepkan obat</td>
+            </tr>
+            <tr>
+                <td>てがみを出す</td>
+                <td>Mengirim surat</td>
+            </tr>
+            <tr>
+                <td>おかねを出す</td>
+                <td>Membayar uang</td>
+            </tr>
+        </table>
         <p><strong>新しいぶんぽうです! (Poin tata bahasa baru!)</strong></p>
-        <p>Untuk mengatakan kita pernah melakukan sesuatu sebelumnya, kita gunakan struktur: kata kerja bentuk た +ことがあります。</p>
-        <p>このえいがを見たことがあります。(Saya pernah melihat film ini (sebelumnya).)</p>
-        <p>日本に行ったことがあります。(Saya pernah pergi ke Jepang (sebelumnya).)</p>
+        <p>Untuk mengatakan kita pernah melakukan sesuatu sebelumnya, kita gunakan struktur: kata kerja bentuk た + ことがあります。</p>
+        <table>
+            <tr>
+                <th>Kalimat</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>このえいがを見たことがあります。</td>
+                <td>Saya pernah melihat film ini (sebelumnya).</td>
+            </tr>
+            <tr>
+                <td>日本に行ったことがあります。</td>
+                <td>Saya pernah pergi ke Jepang (sebelumnya).</td>
+            </tr>
+        </table>
     </div>
 </body>
 

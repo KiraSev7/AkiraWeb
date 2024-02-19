@@ -7,30 +7,39 @@
     <title>Kalimat dengan Kata Benda</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -58,65 +67,54 @@
 <body>
     <div class="container">
         <h1>Kalimat dengan Kata Benda</h1>
-        <p>Akhirnya, kita akan belajar bentuk kasual untuk kalimat yang berakhiran dengan kata benda dalam past tense. Untungnya pola ini identik dengan kata sifat na!</p>
-        <p>Untuk kalimat afirmatif, kita mengubah でした menjadi だった。</p>
-        <p>Untuk kalimat negatif, kita hilangkan です.</p>
+        <p>Pola kalimat kasual untuk kata benda dalam masa lalu mirip dengan kata sifat na.</p>
+        <p><strong>Contoh Kalimat Afirmatif:</strong></p>
         <table>
             <tr>
                 <th>Sopan</th>
                 <th>Kasual</th>
             </tr>
             <tr>
-                <td>日曜日でした。/ にち ようびでした。(Itu hari Minggu.)</td>
-                <td>日曜日だった。/ にち ようびだった。(Itu hari Minggu.)</td>
+                <td>日曜日でした。/ にちようびでした。(Itu hari Minggu.)</td>
+                <td>日曜日だった。/ にちようびだった。(Itu hari Minggu.)</td>
+            </tr>
+            <!-- Contoh lainnya -->
+        </table>
+        <p><strong>Contoh Kalimat Negatif:</strong></p>
+        <table>
+            <tr>
+                <th>Sopan</th>
+                <th>Kasual</th>
             </tr>
             <tr>
-                <td>土曜日じゃなかったです。/どようびじゃなかっ たです。(Itu bukan hari Sabtu.)</td>
-                <td>土曜日じゃなかった。/ ど ようびじゃなかった。(Itu bukan hari Sabtu.)</td>
+                <td>土曜日じゃなかったです。/どようびじゃなかったです。(Itu bukan hari Sabtu.)</td>
+                <td>土曜日じゃなかった。/ どようびじゃなかった。(Itu bukan hari Sabtu.)</td>
             </tr>
+            <!-- Contoh lainnya -->
         </table>
+        <p><strong>Contoh Kalimat dengan Kata Kerja:</strong></p>
         <table>
             <tr>
                 <th>Kata Kerja</th>
                 <th>Kasual</th>
                 <th>Sopan</th>
             </tr>
-            <tr>
-                <td>+ Bukan Afirmatif Masa Lalu</td>
-                <td>のむ</td>
-                <td>のみます</td>
-            </tr>
-            <tr>
-                <td>Bukan Negatif Masa Lalu</td>
-                <td>のまない</td>
-                <td>のみません</td>
-            </tr>
-            <tr>
-                <td>Kata Benda / Kata Sifat Na + Bukan Afirmatif Masa Lalu</td>
-                <td>すし(だ)</td>
-                <td>すしです げんきです</td>
-            </tr>
-            <tr>
-                <td>Kata Benda / Kata Sifat Na + Bukan Negatif Masa Lalu</td>
-                <td>すしじゃない</td>
-                <td>すしじゃないで す げんきじゃない げんきじゃない です</td>
-            </tr>
-            <tr>
-                <td>Kata Sifat-I + Bukan Afirmatif Masa Lalu</td>
-                <td>おいしい</td>
-                <td>おいしいです</td>
-            </tr>
-            <tr>
-                <td>Kata Sifat-I + Bukan Negatif Masa Lalu</td>
-                <td>おいしくないで す</td>
-                <td>おいしくない</td>
-            </tr>
-            <tr>
-                <td>Akhir Pertanyaan</td>
-                <td>?</td>
-                <td>か</td>
-            </tr>
+            <!-- Contoh lainnya -->
         </table>
+        <p><strong>Contoh Kalimat dengan Kata Sifat-I:</strong></p>
+        <table>
+            <tr>
+                <th>Kata Sifat-I</th>
+                <th>Kasual</th>
+                <th>Sopan</th>
+            </tr>
+            <!-- Contoh lainnya -->
+        </table>
+        <p><strong>Catatan:</strong></p>
+        <ul>
+            <li>Pola kalimat kasual untuk kata benda dalam masa lalu identik dengan kata sifat na.</li>
+            <li>Akhir pertanyaan dalam bahasa kasual menggunakan tanda tanya (?) dan dalam bahasa sopan dengan menambahkan か.</li>
+        </ul>
     </div>
 </body>
 

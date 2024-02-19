@@ -7,30 +7,39 @@
     <title>Tentang お酒</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -54,6 +63,23 @@
     li {
         margin: 5px 0;
     }
+
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
     </style>
 </head>
 
@@ -64,21 +90,65 @@
         <h2>Mari belajar budaya Jepang!</h2>
         <p>Dalam pelajaran ini, kita akan membaca beberapa kutipan pendek tentang budaya Jepang. Mari lihat beberapa kata yang akan ditemukan di pelajaran ini!</p>
         <p>Tahukah bahwa kanji <strong>道/どう</strong> ada dalam banyak kata? Kanji ini berarti "cara". Ketika digabungkan dengan kanji untuk aktivitas, berarti "cara dari" melakukan aktivitas tersebut. Menggunakan <strong>道/どう</strong> dengan cara ini cukup umum dalam penamaan aktivitas tradisional Jepang.</p>
-        <ul>
-            <li><strong>書道/ しょどう / shodou</strong> - shodo (kaligrafi Jepang)</li>
-            <li><strong>茶道 / さどう / sadou</strong> - sado (upacara minum teh Jepang)</li>
-            <li><strong>柔道/ じゅうどう / juudou</strong> - judo (jenis seni bela diri)</li>
-            <li><strong>剣道 / けんどう / kendou</strong> - kendo (jenis seni bela diri)</li>
-        </ul>
         <h2>Aktivitas budaya Jepang lainnya</h2>
         <p>Berikut beberapa aktivitas budaya dan olahraga Jepang lainnya!</p>
-        <ul>
-            <li><strong>ぶどう / 武道/budou</strong> (Seni bela diri Jepang)</li>
-            <li><strong>あいきどう / 合気道/aikido</strong> (Seni pertahanan diri Jepang)</li>
-            <li><strong>きゅうどう / 弓道/kyuudou</strong> (Panahan Jepang)</li>
-            <li><strong>かどう / 華道/kadou</strong> (Penataan bunga Jepang)</li>
-            <li><strong>ぼんさい/盆栽/bonsai</strong> (Menanam pohon miniatur)</li>
-        </ul>
+        <h2>Tabel Aktivitas Budaya Jepang</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kanji</th>
+                    <th>Romaji</th>
+                    <th>Arti</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>書道</strong></td>
+                    <td>shodou</td>
+                    <td>kaligrafi Jepang</td>
+                </tr>
+                <tr>
+                    <td><strong>茶道</strong></td>
+                    <td>sadou</td>
+                    <td>upacara minum teh Jepang</td>
+                </tr>
+                <tr>
+                    <td><strong>柔道</strong></td>
+                    <td>juudou</td>
+                    <td>judo (jenis seni bela diri)</td>
+                </tr>
+                <tr>
+                    <td><strong>剣道</strong></td>
+                    <td>kendou</td>
+                    <td>kendo (jenis seni bela diri)</td>
+                </tr>
+                <tr>
+                    <td><strong>武道</strong></td>
+                    <td>budou</td>
+                    <td>seni bela diri Jepang</td>
+                </tr>
+                <tr>
+                    <td><strong>合気道</strong></td>
+                    <td>aikido</td>
+                    <td>seni pertahanan diri Jepang</td>
+                </tr>
+                <tr>
+                    <td><strong>弓道</strong></td>
+                    <td>kyuudou</td>
+                    <td>panahan Jepang</td>
+                </tr>
+                <tr>
+                    <td><strong>華道</strong></td>
+                    <td>kadou</td>
+                    <td>penataan bunga Jepang</td>
+                </tr>
+                <tr>
+                    <td><strong>盆栽</strong></td>
+                    <td>bonsai</td>
+                    <td>menanam pohon miniatur</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 

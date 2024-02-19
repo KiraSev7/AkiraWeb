@@ -7,38 +7,55 @@
     <title>Belajar Bahasa Jepang (Bagian 5)</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
         color: #007bff;
     }
 
-    p {
-        margin-bottom: 15px;
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 10px;
     }
     </style>
 </head>
@@ -47,20 +64,66 @@
     <div class="container">
         <h1>Belajar Bahasa Jepang (Bagian 5)</h1>
         <p><strong>ちがいは何ですか。 (Apa bedanya?)</strong></p>
-        <p>Baik がいこく dan かいがい merujuk pada negara asing. Namun, kanji untuk かいがい adalah 海外, yang berarti "di luar samudra". がいこく adalah 外国, yang berarti "di luar negara".</p>
+        <table>
+            <tr>
+                <th>Kata</th>
+                <th>Kanji</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>がいこく</td>
+                <td>外国</td>
+                <td>Di luar negara</td>
+            </tr>
+            <tr>
+                <td>かいがい</td>
+                <td>海外</td>
+                <td>Di luar samudra</td>
+            </tr>
+        </table>
         <p>Jadi Kanada bukan かいがい dari AS karena tidak ada samudra di antara kedua negara, tapi masih tetap がいこく!</p>
         <p>Mengingat Jepang terdiri dari kepulauan dan setiap negara asing melintasi samudra, か いがい dan がいこく dapat digunakan saling bergantian.</p>
-        <ul>
-            <li>海 うみ/かい laut, samudra</li>
-            <li>外 そとがい di luar, luar ruang</li>
-            <li>くにこくに 国 negara</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Kata</th>
+                <th>Kanji</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>海</td>
+                <td>うみ/かい</td>
+                <td>Laut, samudra</td>
+            </tr>
+            <tr>
+                <td>外</td>
+                <td>そと/がい</td>
+                <td>Di luar, luar ruang</td>
+            </tr>
+            <tr>
+                <td>国</td>
+                <td>くに/こく</td>
+                <td>Negara</td>
+            </tr>
+        </table>
         <p><strong>ふくしゅうしましょう! (Mari kita ulas!)</strong></p>
         <p>Mari mengulas beberapa kata terkait topik ini! Anda mungkin ingat kosakata ini dari pelajaran A1 kita.</p>
-        <ul>
-            <li>かんこうする/観光する/ kankou suru pergi melihat pemandangan</li>
-            <li>りょこうする/旅行する/ ryokou suru bepergian</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Kata</th>
+                <th>Kanji</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>かんこうする</td>
+                <td>観光する</td>
+                <td>Pergi melihat pemandangan</td>
+            </tr>
+            <tr>
+                <td>りょこうする</td>
+                <td>旅行する</td>
+                <td>Bepetgian</td>
+            </tr>
+        </table>
     </div>
 </body>
 

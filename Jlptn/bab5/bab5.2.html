@@ -7,30 +7,39 @@
     <title>どんなえいが?</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -41,12 +50,27 @@
         margin: 10px 0;
         line-height: 1.6;
     }
-    li {
-        list-style-type: none;
-    }
 
     strong {
         color: #28a745;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+    }
+
+    th,
+    td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #007bff;
+        color: #ffffff;
     }
     </style>
 </head>
@@ -57,18 +81,55 @@
         <p>
             Mari kita melihat beberapa genre film sehingga kita bisa mengatakan apa jenis film yang kita sukai!
         </p>
-        <ul>
-            <li>アクション (laga)</li>
-            <li>ホラー (horor)</li>
-            <li>コメディー (komedi)</li>
-            <li>ファンタジー (fantasi)</li>
-            <li>れんあい/恋愛 (romantis/percintaan)</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Genre Film</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>アクション</td>
+                <td>laga</td>
+            </tr>
+            <tr>
+                <td>ホラー</td>
+                <td>horor</td>
+            </tr>
+            <tr>
+                <td>コメディー</td>
+                <td>komedi</td>
+            </tr>
+            <tr>
+                <td>ファンタジー</td>
+                <td>fantasi</td>
+            </tr>
+            <tr>
+                <td>れんあい/恋愛</td>
+                <td>romantis/percintaan</td>
+            </tr>
+        </table>
         <p><strong>Kata dan frasa:</strong></p>
-        <p><strong>どんな / donna</strong> - apa jenis</p>
-        <p><strong>どの / dono</strong> - yang mana/apa</p>
-        <p><strong>どんなえいががすきですか。</strong><br>Apa jenis film yang kamu sukai?</p>
-        <p><strong>どんな食べものがすきですか。</strong><br>Apa jenis makanan yang kamu sukai?</p>
+        <table>
+            <tr>
+                <th>Kata/Frasa</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>どんな</td>
+                <td>apa jenis</td>
+            </tr>
+            <tr>
+                <td>どの</td>
+                <td>yang mana/apa</td>
+            </tr>
+            <tr>
+                <td>どんなえいががすきですか。</td>
+                <td>Apa jenis film yang kamu sukai?</td>
+            </tr>
+            <tr>
+                <td>どんな食べものがすきですか。</td>
+                <td>Apa jenis makanan yang kamu sukai?</td>
+            </tr>
+        </table>
     </div>
 </body>
 

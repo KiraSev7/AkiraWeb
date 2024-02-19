@@ -7,38 +7,43 @@
     <title>Tata Bahasa Baru (Kombinasi たり)</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
         color: #007bff;
-    }
-
-    p {
-        margin-bottom: 15px;
     }
 
     table {
@@ -61,20 +66,28 @@
         <p>Kita telah menggunakan bentuk untuk menamai kegiatan yang akan dilakukan dalam urutan spesifik, satu demi satu.</p>
         <p>Ini menyiratkan bahwa kita tidak akan melakukan hal lainnya. Namun, untuk mendata kegiatan tanpa urutan spesifik atau batasan, kita gunakan struktur berbeda:</p>
         <p>kata kerja dalam bentuk た + り、kata kerja dalam bentuk たりします。</p>
-        <p>Bandingkan contoh di bawah:</p>
-        <p>日曜日はレストランに行って、えいがを見ます。(Pada hari Minggu saya akan pergi ke restoran lalu menonton film.)</p>
-        <p>日曜日はレストランに行ったり、えいがを見たりします。(Pada hari Minggu saya akan melakukan berbagai hal seperti pergi ke restoran dan menonton film.)</p>
         <p><strong>Tata Bahasa Baru</strong></p>
         <p>Untuk membicarakan dua aktivitas yang kita suka lakukan, kita gunakan pola:</p>
         <p>bentuk kata kerja A たり、bentuk kata kerja B たりすることがすきです。</p>
         <p>Kita juga bisa menggunakannya dengan するのが alih-alih りすることが、</p>
-        <p>本を読んだり、りょうりをしたりするのが好きです。(Saya suka melakukan berbagai hal seperti membaca buku dan memasak.)</p>
-        <p>うたをうたったり、えいがを見たりすることが好きです。(Saya suka melakukan berbagai hal seperti menyanyikan satu lagu dan menonton film.)</p>
-        <p><strong>Apa Tense Kalimat Itu?</strong></p>
-        <p>Walau kita menggunakan past tense dari kata kerja (bentuk た), tense keseluruhan kalimat ditentukan oleh します pada akhir kalimat.</p>
-        <p>日曜日はレストランに行ったり、えいがを見たりします。(Pada hari Minggu saya akan melakukan berbagai hal seperti pergi ke restoran dan menonton film.)</p>
-        <p>きのうはべんきょうをしたり、うんどうをしたりしました。(Kemarin saya melakukan berbagai hal seperti belajar dan berolahraga.)</p>
-        <p>来年は日本に行ったり、アメリカに行ったりしたいです。(Tahun depan saya ingin melakukan berbagai hal seperti pergi ke Jepang dan AS.)</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Contoh</th>
+                    <th>Terjemahan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>日曜日はレストランに行ったり、えいがを見たりします.</td>
+                    <td>Pada hari Minggu saya akan melakukan berbagai hal seperti pergi ke restoran dan menonton film.</td>
+                </tr>
+                <tr>
+                    <td>本を読んだり、りょうりをしたりするのが好きです.</td>
+                    <td>Saya suka melakukan berbagai hal seperti membaca buku dan memasak.</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 

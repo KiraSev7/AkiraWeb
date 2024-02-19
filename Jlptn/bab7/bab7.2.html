@@ -7,30 +7,39 @@
     <title>Bentuk ない untuk Kata Kerja U</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -100,22 +109,35 @@
             </tr>
             <tr>
                 <td>見る/みる (melihat; menonton)</td>
-                <td>見ます/みます</td>
                 <td></td>
+                <td>見ます/みます</td>
             </tr>
             <tr>
                 <td>おきる (bangun)</td>
-                <td>おきます</td>
                 <td></td>
+                <td>おきます</td>
+                
             </tr>
         </table>
         <p><strong>Kata Kerja Tidak Beraturan</strong></p>
-        <p><em>来る/くる (datang)</em></p>
-        <p><em>来ます/きます</em></p>
-        <p><em>する (melakukan)</em></p>
-        <p><em>します</em></p>
-        <p><em>うんどうする (berolahraga)</em></p>
-        <p><em>うんどうします</em></p>
+        <table>
+            <tr>
+                <th>Bentuk Kamus</th>
+                <th>Bentuk Nai</th>
+            </tr>
+            <tr>
+                <td>来る/くる (datang)</td>
+                <td>こない</td>
+            </tr>
+            <tr>
+                <td>する (melakukan)</td>
+                <td>しない</td>
+            </tr>
+            <tr>
+                <td>うんどうする (berolahraga)</td>
+                <td>うんどうしない</td>
+            </tr>
+        </table>
         <p><strong>Kata Kerja U</strong></p>
         <table>
             <tr>
@@ -124,7 +146,7 @@
             </tr>
             <tr>
                 <td>あう (bertemu)</td>
-                <td>あいます</td>
+                <td>あわない</td>
             </tr>
             <tr>
                 <td>行くいく (pergi)</td>

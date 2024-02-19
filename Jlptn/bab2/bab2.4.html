@@ -7,30 +7,45 @@
     <title>Cinta seperti apa?</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
+        /* Menetapkan tinggi body menjadi 100% dari viewport height */
     }
 
+
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    /* Optional: Add hover effect to the container */
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+
+        /* Atur tata letak untuk layar dengan lebar maksimum 600px */
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+            /* Menetapkan tinggi body menjadi 100% dari viewport height */
+        }
     }
 
     h1 {

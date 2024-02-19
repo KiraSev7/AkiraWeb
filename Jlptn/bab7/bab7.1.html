@@ -7,30 +7,39 @@
     <title>Bentuk nai untuk ある</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: 100vh;
+        }
     }
 
     h1 {
@@ -45,6 +54,23 @@
     strong {
         color: #28a745;
     }
+
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
     </style>
 </head>
 
@@ -52,10 +78,24 @@
     <div class="container">
         <h1>! Apa bentuk nai untuk ある?</h1>
         <p>Ketika kita menggunakan bentuk kasual negatif untuk ある (adalah/ada - untuk objek tidak bergerak), kita katakan <strong>ない</strong>. Mari bandingkan bentuk sopan dan kasual untuk kata kerja ini.</p>
-        <h2>Sopan</h2>
-        <p><strong>コップの中に水がありません。</strong> / <strong>コップのなかにみず がありません。</strong> (Tidak ada air di gelas.)</p>
-        <h2>Kasual</h2>
-        <p><strong>コップの中に水がない。</strong> / <strong>コップのなかにみずが ない。</strong> (Tidak ada air di gelas.)</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Bentuk</th>
+                    <th>Kalimat Contoh</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>Sopan</strong></td>
+                    <td>コップの中に水がありません。 / コップのなかにみず がありません。</td>
+                </tr>
+                <tr>
+                    <td><strong>Kasual</strong></td>
+                    <td>コップの中に水がない。 / コップのなかにみずが ない。</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 

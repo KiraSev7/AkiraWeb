@@ -7,30 +7,39 @@
     <title>Kiat untuk Anda!</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -54,6 +63,23 @@
     li {
         margin: 5px 0;
     }
+
+    table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+
+    th {
+        background-color: #007bff;
+        color: white;
+    }
     </style>
 </head>
 
@@ -62,10 +88,40 @@
         <h1>Kiat untuk Anda!</h1>
         <p>Kita dapat mengubah kata kerja menjadi kata benda dengan menggunakan bentuk kata kerja + の.</p>
         <p>Jika kita gabungkan ini dengan struktur kata benda がすきです, kita bisa membicarakan apa yang kita suka lakukan menggunakan pola: kata kerja + のがすきです。</p>
-        <ul>
-            <li><strong>私はうたうのがすきです。</strong> (Saya suka bernyanyi.)</li>
-            <li><strong>私はりょうりをするのがきらいです。</strong> (Saya tidak suka memasak.)</li>
-        </ul>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kata Kerja</th>
+                    <th>Arti</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>うたう / 歌う / utau</strong></td>
+                    <td>bernyanyi</td>
+                </tr>
+                <tr>
+                    <td><strong>りょうりをする / 料理をする / ryouri o suru</strong></td>
+                    <td>memasak</td>
+                </tr>
+                <tr>
+                    <td><strong>あるく / 歩く / aruku</strong></td>
+                    <td>berjalan</td>
+                </tr>
+                <tr>
+                    <td><strong>はしる / 走る / hashiru</strong></td>
+                    <td>berlari (kata kerja U)</td>
+                </tr>
+                <tr>
+                    <td><strong>べんきょうをする / 勉強 をする / benkyou o suru</strong></td>
+                    <td>belajar</td>
+                </tr>
+                <tr>
+                    <td><strong>れんしゅうをする / 練習 をする / renshuu o suru</strong></td>
+                    <td>berlatih</td>
+                </tr>
+            </tbody>
+        </table>
         <h2>何をするのが好きですか。</h2>
         <p>Berikut beberapa kata kerja lainnya yang dapat digunakan dengan: kata kerja のがすきです。</p>
         <ul>
@@ -74,18 +130,60 @@
             <li><strong>べんきょうをする / 勉強 をする / benkyou o suru</strong> - belajar</li>
             <li><strong>れんしゅうをする / 練習 をする / renshuu o suru</strong> - berlatih</li>
         </ul>
-        <p><strong>Kiat untuk Anda!</strong><br>
-            Ketika menggunakan <strong>べんきょうをする / べん きょうする</strong> dalam satu kalimat, berhati-hatilah dengan partikel!<br>
-            kata benda + を + べんきょうする dan kata benda +の+ べんきょうをする benar, dan memiliki arti yang sama. Dua pilihan lainnya tidak benar secara tata bahasa.<br>
-            Hal ini berlaku dengan <strong>れんしゅう</strong> juga!<br>
-            <strong>日本ごをべんきょうする。</strong><br>
-            <strong>日本ごをべんきょうをす る。</strong><br>
-            <strong>日本ごのべんきょうをす る。</strong><br>
-            <strong>日本ごのべんきょうす る。</strong><br>
-            tata bahasa yang benar<br>
-            tata bahasa yang tidak benar (tidak bisa memiliki dua を dalam satu kalimat)<br>
-            tata bahasa yang benar<br>
-            tata bahasa yang tidak benar (Anda perlu を untuk menghubungkan kata kerja)</p>
+        <p>Ketika menggunakan <strong>べんきょうをする / べん きょうする</strong> dalam satu kalimat, berhati-hatilah dengan partikel!</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tata Bahasa</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>kata benda + を + べんきょうする</strong></td>
+                    <td>Benar dan memiliki arti yang sama</td>
+                </tr>
+                <tr>
+                    <td><strong>kata benda + の + べんきょうをする</strong></td>
+                    <td>Benar dan memiliki arti yang sama</td>
+                </tr>
+                <tr>
+                    <td><strong>pilihan lainnya tidak benar (tidak bisa memiliki dua を dalam satu kalimat)</strong></td>
+                    <td>Tidak benar secara tata bahasa</td>
+                </tr>
+                <tr>
+                    <td><strong>pilihan lainnya tidak benar (Anda perlu を untuk menghubungkan kata kerja)</strong></td>
+                    <td>Tidak benar secara tata bahasa</td>
+                </tr>
+            </tbody>
+        </table>
+        <p>Hal ini berlaku dengan <strong>れんしゅう</strong> juga!</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Tata Bahasa</th>
+                    <th>Keterangan</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><strong>日本ごをべんきょうする</strong></td>
+                    <td>Tata bahasa yang benar</td>
+                </tr>
+                <tr>
+                    <td><strong>日本ごをべんきょうをす る</strong></td>
+                    <td>Tata bahasa yang tidak benar (tidak bisa memiliki dua を dalam satu kalimat)</td>
+                </tr>
+                <tr>
+                    <td><strong>日本ごのべんきょうをす る</strong></td>
+                    <td>Tata bahasa yang benar</td>
+                </tr>
+                <tr>
+                    <td><strong>日本ごのべんきょうす る</strong></td>
+                    <td>Tata bahasa yang tidak benar (Anda perlu を untuk menghubungkan kata kerja)</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 

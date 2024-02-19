@@ -7,30 +7,39 @@
     <title>Berhitung dalam Bahasa Jepang</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -54,6 +63,23 @@
     p:last-child {
         margin-bottom: 0;
     }
+
+    table {
+        width: 100%;
+        margin-top: 20px;
+        border-collapse: collapse;
+    }
+
+    th,
+    td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
     </style>
 </head>
 
@@ -61,30 +87,30 @@
     <div class="container">
         <h1>Berhitung dalam Bahasa Jepang</h1>
         <p>
-            Kita menggunakan penghitung berbeda untuk berbagai jenis kata benda. Lihat beberapa contoh di bagan.
+            Kita menggunakan penghitung berbeda untuk berbagai jenis kata benda. Lihat beberapa contoh di tabel berikut.
         </p>
-        <ul>
-            <li>
-                <strong>penghitung:</strong> つ/tsu
-                <br>
-                <strong>tujuan:</strong> penghitung umum untuk objek tidak bergerak
-            </li>
-            <li>
-                <strong>penghitung:</strong> ほん / 本 / hon
-                <br>
-                <strong>tujuan:</strong> untuk sesuatu yang panjang dan tipis, atau seperti tongkat
-            </li>
-            <li>
-                <strong>penghitung:</strong> まい/枚 / mai
-                <br>
-                <strong>tujuan:</strong> untuk sesuatu yang rata
-            </li>
-            <li>
-                <strong>penghitung:</strong> だい /台 / dai
-                <br>
-                <strong>tujuan:</strong> untuk perabotan besar dan elektronik
-            </li>
-        </ul>
+        <table>
+            <tr>
+                <th>Penghitung</th>
+                <th>Tujuan</th>
+            </tr>
+            <tr>
+                <td>つ / tsu</td>
+                <td>Penghitung umum untuk objek tidak bergerak</td>
+            </tr>
+            <tr>
+                <td>ほん / 本 / hon</td>
+                <td>Untuk sesuatu yang panjang dan tipis, atau seperti tongkat</td>
+            </tr>
+            <tr>
+                <td>まい / 枚 / mai</td>
+                <td>Untuk sesuatu yang rata</td>
+            </tr>
+            <tr>
+                <td>だい /台 / dai</td>
+                <td>Untuk perabotan besar dan elektronik</td>
+            </tr>
+        </table>
     </div>
 </body>
 

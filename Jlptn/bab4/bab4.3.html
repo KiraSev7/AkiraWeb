@@ -7,30 +7,39 @@
     <title>いい? わるい? (Bagus? Buruk?)</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
-        height: 100%;
-
-        /* Gunakan font yang lebih modern */
+        height: 100vh;
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -54,6 +63,23 @@
     p:last-child {
         margin-bottom: 0;
     }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    th,
+    td {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+    }
+
+    th {
+        background-color: #f2f2f2;
+    }
     </style>
 </head>
 
@@ -66,18 +92,38 @@
             dengan kata sifat わるい. Misalnya, めがわるいです。berarti "Penglihatan saya buruk" dan
             みみがいいです。berarti "Pendengaran saya baik".
         </p>
-        <ul>
-            <li><strong>私はめがわるいです。</strong> - Penglihatan saya buruk.</li>
-            <li><strong>私はみみがいいです。</strong> - Pendengaran saya baik.</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Kalimat</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>私はめがわるいです。</td>
+                <td>Penglihatan saya buruk.</td>
+            </tr>
+            <tr>
+                <td>私はみみがいいです。</td>
+                <td>Pendengaran saya baik.</td>
+            </tr>
+        </table>
         <p>
             Kita juga dapat menggunakan あたま (kepala) dengan kata sifat いい dan わるい untuk mengatakan jika seseorang
             itu cerdas atau tidak.
         </p>
-        <ul>
-            <li><strong>かれはあたまがいいです。</strong> - Dia cerdas.</li>
-            <li><strong>私の犬はあたまがわるいです。</strong> - Anjing saya tidak cerdas.</li>
-        </ul>
+        <table>
+            <tr>
+                <th>Kalimat</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>かれはあたまがいいです。</td>
+                <td>Dia cerdas.</td>
+            </tr>
+            <tr>
+                <td>私の犬はあたまがわるいです。</td>
+                <td>Anjing saya tidak cerdas.</td>
+            </tr>
+        </table>
     </div>
 </body>
 

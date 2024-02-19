@@ -7,30 +7,39 @@
     <title>おぼえていますか? (Ingatkah Anda?)</title>
     <style>
     body {
+        font-family: 'Roboto', sans-serif;
+        background-color: #f8f8f8;
+        color: #333;
         margin: 0;
-        background-color: #282c36;
-        /* Warna latar belakang yang lebih modern */
+        padding: 0;
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Roboto', sans-serif;
         height: 100%;
-
-        /* Gunakan font yang lebih modern */
     }
 
     .container {
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        /* Bayangan untuk memberikan efek ketinggian */
-        border-radius: 8px;
-        /* Tampilan sudut yang lembut */
-        background-color: #ffffff;
-        /* Warna latar belakang container */
-        height: 100%;
-        width: 90%;
-        /* Lebar container 80% dari lebar viewport */
-        padding: 30px;
+        max-width: 800px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
         text-align: center;
+    }
+
+    .container:hover {
+        box-shadow: 0 0 30px rgba(0, 0, 0, 0.2);
+        transition: box-shadow 0.3s ease-in-out;
+    }
+
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 100%;
+        }
+
+        body {
+            height: auto;
+        }
     }
 
     h1 {
@@ -58,29 +67,51 @@
 <body>
     <div class="container">
         <h1>おぼえていますか? (Ingatkah Anda?)</h1>
-        <p>Anda sudah belajar frasa もういちど sebelumnya, yang berarti sekali lagi. Sekarang Anda tahu cara menulisnya dalam kanji! もう一度</p>
-        <p>もう一度言ってください。(Tolong katakan sekali lagi.)</p>
-        <p>もう一度食べたいです。(Saya ingin memakannya sekali lagi.)</p>
+        <p>Anda sudah belajar frasa もういちど sebelumnya, yang berarti sekali lagi dan ditulis dalam kanji もう一度.</p>
         <h2>Kiat untuk Anda!</h2>
-        <p>度 juga digunakan sebagai penghitung yang berarti "derajat" baik untuk suhu maupun sudut! Cukup tambahkan setelah angka.</p>
+        <p>度 digunakan sebagai penghitung untuk "derajat" dalam suhu dan sudut. Contoh penggunaan:</p>
         <p>このおんせんは40度です。(Onsen ini 40 derajat.)</p>
-        <p>360度見てください。(Tolong lihat sekitar Anda (dalam 360 derajat).)</p>
-        <p>もう一度と もう一回</p>
-        <p>もう一回 juga berarti sekali lagi, dan terutama dapat ditukar dengan もう一度.</p>
-        <p>もう一回言ってください。(Tolong katakan (itu) sekali lagi.)</p>
+        <p>360度見てください。(Tolong lihat sekitar Anda dalam 360 derajat.)</p>
+        <p>もう一度 dan もう一回 keduanya berarti "sekali lagi" dan dapat dipertukarkan.</p>
+        <p>もう一度言ってください。(Tolong katakan sekali lagi.)</p>
         <p>もう一回行きたいです。(Saya ingin pergi sekali lagi.)</p>
-        <h2>回と度</h2>
-        <p>回 dan 度 keduanya dapat berarti waktu, yang dapat digunakan sebagai penghitung dan berarti jumlah berapa kali sesuatu terjadi.</p>
-        <p>Sementara kata tersebut dapat ditukar ketika membicarakan "satu kali", lebih umum untuk menggunakan setelah "kedua kali".</p>
-        <p>一度行ったことがあります。/一回行ったこ とがあります。(Saya sudah pernah (ke sana) sekali.)</p>
+        <h2>回 dan 度 sebagai Penghitung</h2>
+        <p>回 dan 度 dapat berarti "kali" sebagai penghitung untuk menyatakan berapa kali sesuatu terjadi.</p>
+        <p>一度行ったことがあります。(Saya sudah pernah (ke sana) sekali.)</p>
         <p>二回行ったことがあります。(Saya sudah pernah (ke sana) dua kali.)</p>
         <p>三回行ったことがあります。(Saya sudah pernah (ke sana) tiga kali.)</p>
-        <h2>起きると起こす</h2>
-        <p>Kanji 起 digunakan dalam kata seperti 起きる (おきる) dan 起こす (おこす).</p>
-        <p>起きる berarti bangun dari tidur, dan 起こす berarti membangunkan seseorang dari tidur.</p>
+        <h2>起きる dan 起こす</h2>
+        <p>Kanji 起 digunakan dalam kata seperti 起きる (おきる) yang berarti bangun dari tidur, dan 起こす (おこす) yang berarti membangunkan seseorang dari tidur.</p>
         <p>今日は八時に起きました。(Saya bangun jam delapan hari ini.)</p>
-        <p>あしたは六時に起こしてください。</p>
-        <p>(Besok tolong bangunkan saya jam enam.)</p>
+        <p>あしたは六時に起こしてください。(Besok tolong bangunkan saya jam enam.)</p>
+        <h2>Table Penggunaan Kanji</h2>
+        <table>
+            <tr>
+                <th>Kanji</th>
+                <th>Kata</th>
+                <th>Arti</th>
+            </tr>
+            <tr>
+                <td>もう一度</td>
+                <td>もういちど</td>
+                <td>Sekali lagi</td>
+            </tr>
+            <tr>
+                <td>度</td>
+                <td>ど</td>
+                <td>Derajat</td>
+            </tr>
+            <tr>
+                <td>回</td>
+                <td>かい</td>
+                <td>Kali</td>
+            </tr>
+            <tr>
+                <td>起</td>
+                <td>お</td>
+                <td>Bangun (dari tidur)</td>
+            </tr>
+        </table>
     </div>
 </body>
 
