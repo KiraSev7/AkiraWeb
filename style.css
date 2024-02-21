@@ -172,11 +172,11 @@ button {
 }
 
 .a-z ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    margin: 0;
+    list-style: none;
     padding: 0;
+    margin: 0;
+    display: flex;
+    /* Mengubah daftar menjadi tata letak flex */
 }
 
 .a-z li {
