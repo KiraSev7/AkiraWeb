@@ -139,11 +139,6 @@ main {
     border-right: 1px solid;
 }
 
-.calendar {
-    border-radius: 10px;
-    background-color: white;
-
-}
 
 .header {
     display: flex;
@@ -166,7 +161,6 @@ button {
 
 
 .a-z {
-    overflow: auto;
     background: white;
     border-radius: 10px;
 }
@@ -176,6 +170,7 @@ button {
     padding: 0;
     margin: 0;
     display: flex;
+    overflow: auto;
     /* Mengubah daftar menjadi tata letak flex */
 }
 
@@ -263,13 +258,6 @@ footer {
     z-index: 2;
 }
 
-.footer-column {
-    display: flex;
-}
-
-.footer-column div {
-    margin-left: 60px;
-}
 
 /* style.css */
 #rem {
@@ -369,38 +357,8 @@ footer {
     }
 }
 
-.data_search {
-    border: 1px solid gray;
-}
-
-.katakana,
-.hiragana {
-    border: 1px solid gray;
-
-}
-
-.hiragana-table,
-.katakana-table {
-    margin-bottom: 2px;
-    border: 1px solid white;
-
-}
-
-.hiragana p,
-.katakana p {
-    margin: 1px;
-    border: 1px solid gray;
-
-}
-
-.hiragana-cell,
-.katakana-cell {
-    background-color: aqua;
-}
-
 
 .container2 {
-    margin-top: 50px;
     perspective: 900px;
     display: flex;
     justify-content: right;

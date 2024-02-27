@@ -4,6 +4,19 @@
         padding: 0%;
     }
 
+    #rem {
+        z-index: 1;
+        /* Atur z-index sesuai kebutuhan */
+        position: absolute;
+        width: 15em;
+        right: 0;
+        bottom: 0;
+
+        pointer-events: none;
+        /* Membuat gambar tidak dapat diinteraksi */
+    }
+
+
     header {}
 
     #logo {
@@ -39,8 +52,8 @@
     }
 
     header ul li a {
-    display: block;
-    font-size: 15px;
+        display: block;
+        font-size: 15px;
     }
 
     #search-form {
@@ -95,45 +108,23 @@
         padding: 0;
     }
 
-    body.night-mode footer i {
-        background: aqua;
-        color: black;
-    }
 
     #cpr {
         margin: 0;
     }
 
     .dropdown-content a {
-      font-size: 15px;
-}
-.abc{
-    display: flex;
-    flex-direction: column;
-}
-.data_search{
-    border: 1px solid gray;
-}
-.katakana,.hiragana{
-    border: 1px solid gray;
+        font-size: 15px;
+    }
 
-}
-.hiragana-table, .katakana-table{
-    margin-bottom: 2px;
-    
-}
-.hiragana p, .katakana p {
-    margin: 1px;
-    border: 1px solid gray;
+    .abc {
+        display: flex;
+        flex-direction: column;
+    }
 
-}
-.hiragana-cell,.katakana-cell{
-    background-color: aqua;
-}
-.calendar td{
-    position: relative;
-    z-index: 2;
-}
+    .data_search {
+        border: 1px solid gray;
+    }
 
 }
 
@@ -225,10 +216,6 @@
         padding: 0;
     }
 
-    body.night-mode footer i {
-        background: aqua;
-        color: black;
-    }
 
     #cpr {
         margin: 0;
