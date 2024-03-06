@@ -21,6 +21,7 @@
     flex-direction: column;
     justify-content: right;
     align-items: center;
+    height: 95vh;
 }
 .content{
     position: absolute;

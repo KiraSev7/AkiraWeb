@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            color: white;
+            padding: 15px;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        /* Subnavigation styling */
+        ul.subnav {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            padding: 10px;
+        }
+
+        li.active ul.subnav {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li>
+            <a href="#" onclick="toggleSubnav(event)">Products</a>
+            <!-- Subnavigation -->
+            <ul class="subnav">
+                <li><a href="#">Product 1</a></li>
+                <li><a href="#">Product 2</a></li>
+                <li><a href="#">Product 3</a></li>
+            </ul>
+        </li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<script>
+    function toggleSubnav(event) {
+        event.preventDefault();
+
+        // Toggle kelas 'active' pada elemen li yang diklik
+        var clickedItem = event.target.parentNode;
+        clickedItem.classList.toggle('active');
+    }
+</script>
+
+</body>
+</html>
