@@ -15,6 +15,16 @@
         pointer-events: none;
         /* Membuat gambar tidak dapat diinteraksi */
     }
+    .container2 {
+    perspective: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: center;
+}
+.content{
+    position: absolute;
+}
 
 
     header {}
