@@ -15,17 +15,20 @@
         pointer-events: none;
         /* Membuat gambar tidak dapat diinteraksi */
     }
+
     .container2 {
-    perspective: 900px;
-    display: flex;
-    flex-direction: column;
-    justify-content: right;
-    align-items: center;
-    height: 95vh;
-}
-.content{
-    position: absolute;
-}
+        perspective: 900px;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        align-items: center;
+        height: 90vh;
+    }
+
+    .content {
+        position: absolute;
+        overflow: auto;
+    }
 
 
     header {}
